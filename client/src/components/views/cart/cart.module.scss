@@ -1,0 +1,179 @@
+@import 'src/style/global';
+
+* {
+  margin: 0;
+}
+
+.emptyCart {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  &__label {
+    font: $montserrat-24-bold;
+  }
+}
+
+.content {
+  @media (min-width: $tablet) {
+    margin: 0 64px;
+  }
+
+  margin: -40px 24px 0;
+
+  .title {
+    margin: 25px 0;
+    font: $montserrat-36-medium;
+  }
+
+  .container {
+    @media (min-width: $laptop) {
+      flex-direction: row;
+    }
+
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 15px;
+
+    .carts {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .payment {
+      @media (min-width: $laptop) {
+        height: 260px;
+        width: 20%;
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+      height: 160px;
+      border-radius: 20px;
+      padding: 20px;
+
+      .price {
+        font: $montserrat-20-medium;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .value {
+          gap: 7px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      button {
+        font: $montserrat-16-bold;
+      }
+    }
+  }
+}
+
+.confirmModal {
+  position: relative;
+  display: flex;
+  max-height: 60%;
+
+  .modalContent {
+    width: 100%;
+
+    .products {
+      max-height: 75%;
+      overflow: auto;
+    }
+
+    .confirmation {
+      height: 25%;
+    }
+  }
+
+  .title {
+    font: $montserrat-24-bold;
+    margin-bottom: 15px;
+  }
+
+  .carts {
+    @media (min-width: $laptop) {
+      gap: 20px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 5px;
+    height: 100%;
+
+    .cart {
+      @media (min-width: $laptop) {
+        font: $montserrat-16-regular;
+      }
+
+      height: 24px;
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      font: $montserrat-11-regular;
+      font-size: 14px;
+      gap: 10px;
+
+      &__title {
+        gap: 8px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__price {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+
+      .free {
+        margin-right: 2px;
+        color: $validation;
+      }
+    }
+  }
+
+  .totalPrice {
+    @media (min-width: $laptop) {
+      font: $montserrat-20-bold;
+      gap: 10px;
+    }
+
+    font: $montserrat-16-bold;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    &__value {
+      gap: 7px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+}

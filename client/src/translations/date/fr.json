@@ -1,0 +1,10 @@
+{
+  "date": {
+    "seconds": "secondes",
+    "minutes": "minutes",
+    "hours": "heures",
+    "days": "jours",
+    "months": "mois",
+    "years": "années"
+  }
+}

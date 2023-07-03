@@ -1,0 +1,35 @@
+@import './src/style/global';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .image {
+    width: 10em;
+
+    @media (min-width: $laptop) {
+      width: 15em;
+    }
+  }
+
+  h1 {
+    font: $montserrat-24-medium;
+
+    @media (min-width: $laptop) {
+      font: $montserrat-32-medium;
+    }
+  }
+
+  h2 {
+    font: $montserrat-20-regular;
+    margin-bottom: $space * 2;
+
+    @media (min-width: $laptop) {
+      font: $montserrat-24-regular;
+      margin-bottom: $space * 3;
+    }
+  }
+}

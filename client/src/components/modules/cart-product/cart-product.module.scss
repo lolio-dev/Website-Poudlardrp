@@ -1,0 +1,107 @@
+@import 'src/style/global';
+
+$mobile-bc: 820px;
+
+.cart {
+  @media (min-width: $laptop) {
+    height: 300px !important;
+  }
+
+  @media (min-width: $mobile-bc) {
+    flex-direction: row;
+    height: 200px;
+  }
+
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .image {
+    @media (min-width: $mobile-bc) {
+      border-radius: 20px 0 0 20px;
+    }
+
+    height: inherit;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+  }
+
+  .infos {
+    width: 50%;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .header {
+        gap: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+          @media (min-width: $laptop) {
+            font: $montserrat-24-medium;
+          }
+
+          font: $montserrat-16-medium;
+          cursor: pointer;
+        }
+      }
+
+      .description {
+        font: $montserrat-16-regular;
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .delete {
+      .icon {
+        cursor: pointer;
+        margin-top: 3px;
+        font-size: 26px;
+        color: $dark;
+        transition: 0.2s;
+
+        &:hover {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  p {
+    @media (min-width: $laptop) {
+      font: $montserrat-24-medium;
+    }
+
+    font: $montserrat-16-medium;
+  }
+}

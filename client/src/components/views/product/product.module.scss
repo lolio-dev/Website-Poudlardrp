@@ -1,0 +1,160 @@
+@import './../../../style/global';
+
+* {
+  margin: 0;
+}
+
+.main {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-bottom: $space * 4;
+}
+
+.product {
+  @media (min-width: $laptop) {
+    width: 100%;
+    gap: 40px;
+  }
+
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .illustration {
+    .image,
+    .model {
+      height: 450px;
+      width: 705.88px;
+      object-fit: cover;
+    }
+  }
+
+  .sidebar {
+    @media (min-width: $laptop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .info {
+      .title {
+        @media (min-width: $laptop) {
+          font: $montserrat-36-regular;
+        }
+        margin: 0;
+        color: $secondary;
+        font: $montserrat-24-regular;
+      }
+
+      .separator {
+        @media (min-width: $laptop) {
+          margin-top: 15px;
+        }
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        @media (min-width: $desktop) {
+          width: 600px;
+        }
+
+        @media (min-width: $laptop) {
+          font: $montserrat-24-regular;
+        }
+
+        font: $montserrat-16-regular;
+      }
+    }
+
+    .actions {
+      @media (min-width: $tablet) {
+        height: 77px;
+        flex-wrap: nowrap;
+      }
+      margin-top: 30px;
+
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+
+      .counter {
+        margin-right: 19px;
+        margin-top: 19px;
+      }
+
+      .basketbtn {
+        margin-top: 19px;
+        margin-right: 19px;
+        margin-left: 0;
+      }
+
+      .price {
+        @media (max-width: $tablet) {
+          font: $montserrat-16-regular;
+          height: 38px;
+          svg {
+            height: 20px !important;
+            width: 20px !important;
+          }
+        }
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        height: 55.2px;
+        margin: 19px 0 0;
+        line-height: 0;
+        padding: 0 $space;
+        font: $montserrat-24-regular;
+        border: 2px solid $dark;
+        color: $dark;
+        border-radius: 15px;
+
+        svg {
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}
+
+.similarProducts {
+  margin-top: 52px;
+  margin-bottom: 52px;
+
+  .similarProductsTitle {
+    @media (min-width: $laptop) {
+      font: $montserrat-36-medium;
+    }
+
+    text-align: center;
+    font: $montserrat-24-regular;
+  }
+
+  .similarProductsProducts {
+    @media (min-width: $desktop) {
+      margin-top: 62px;
+    }
+
+    @media (min-width: $tablet) {
+      justify-content: space-around;
+    }
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    .similarProductsProduct {
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}

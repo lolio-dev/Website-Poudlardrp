@@ -1,0 +1,42 @@
+@import './../../../style/global';
+
+$sizes: (
+  'mini': 75px,
+  'small': 125px,
+  'medium': 200px,
+  'large': 300px,
+);
+
+@each $size, $sizevalue in $sizes {
+  .#{$size} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: $sizevalue;
+    height: auto;
+  }
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.pulsing {
+  animation: 2s large-pulse infinite ease-in-out;
+}
+
+@keyframes large-pulse {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 70%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

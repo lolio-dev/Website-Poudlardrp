@@ -1,0 +1,16 @@
+{
+  "alert": {
+    "incomplete": {
+      "message": "Votre profil est incomplet: pour définir votre adresse email,",
+      "click": " cliquez ici"
+    },
+    "unverified": {
+      "message": {
+        "part1": "Votre email :",
+        "part2": " n'a pas été validée,",
+        "part3": " pour renvoyer le mail de confirmation"
+      },
+      "click": "cliquez ici"
+    }
+  }
+}

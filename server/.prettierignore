@@ -1,0 +1,32 @@
+# dependencies
+node_modules
+
+# builds
+build
+dist
+
+# configuration
+.commitlintrc
+.editorconfig
+.eslintignore
+.gitignore
+.nvmrc
+.prettierignore
+
+# misc
+.idea
+.DS_Store
+*.env
+.eslintcache
+*.log
+*.lock
+*.snap
+*.ico
+*.svg
+*.png
+*.jpg
+*.woff*
+*.eot*
+*.otf*
+*.ttf*
+LICENSE

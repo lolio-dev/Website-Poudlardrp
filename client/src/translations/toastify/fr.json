@@ -1,0 +1,26 @@
+{
+  "warnings": {
+    "NEED_TO_LOGIN": "Vous devez vous connecter pour effectuer cette action.",
+    "CANNOT_OWN_MORE": "Vous ne pouvez pas posseder plus de {productMaximum} objets de ce type, vous en possedez déjà {quantityBought}.",
+    "CANNOT_OWN_MORE_WHEN_NOT_QUANTITY_BOUGHT": "Vous ne pouvez pas posseder plus de {productMaximum} objets de ce type",
+    "ALREADY_MAX_QUANTITY_OWNED": "Vous possédez déjà {totalQuantityOwned} '{productTitle}' sur {productMaximum} (objets achetés + panier)."
+  },
+  "errors": {
+    "DEFAULT": "Oups ! Cela n'a pas fonctionné, veuillez réessayer ultérieurement",
+    "error_while_getting_xbl": "Une erreur est survenue lors de la récupération XBL",
+    "no_xbox_account": "Oups, cela n'a pas marché, veuillez réessayer plus tard",
+    "no_minecraft_account": "Oups, cela n'a pas marché, veuillez réessayer plus tard",
+    "email_already_exist": "Adresse email déjà utilisée",
+    "invalid_token": "Token invalide",
+    "already_change_in_last_day": "Vous pouvez changer d'email qu'une seule fois par jours",
+    "already_sent_in_last_half": "Vous pouvez renvoyer un mail qu'une fois toutes les 30 minutes",
+    "offer_not_found": "Offre introuvable",
+    "partnercode_not_found": "Code partnenaire invalide"
+  },
+  "success": {
+    "ADDED_TO_CART": "Element ajouté au panier",
+    "email_verified": "Adresse email vérifiée",
+    "mail_send": "Message envoyé",
+    "CART_VALIDATED": "Panier validé, rendez vous en jeu pour récuperer vos achats"
+  }
+}

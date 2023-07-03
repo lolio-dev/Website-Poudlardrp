@@ -1,0 +1,27 @@
+@import './src/style/rarity';
+@import './src/style/global';
+
+.badge {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  width: fit-content;
+  text-transform: capitalize;
+
+  .icon svg {
+    display: block;
+    color: white;
+    margin-right: 7px;
+  }
+
+  .value {
+    font: $montserrat-16-bold;
+    color: white;
+  }
+}
+
+.common {
+  background: red;
+}

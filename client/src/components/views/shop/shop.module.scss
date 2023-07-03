@@ -1,0 +1,98 @@
+@import '../../../style/global';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  gap: 2em;
+  padding: 0 $space;
+  margin: $space * 8 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $space;
+
+  @media (min-width: $laptop) {
+    flex-direction: row;
+  }
+
+  .filters {
+    width: 50%;
+    padding: 0 $space * 0.5;
+    margin-top: $space;
+    align-self: center;
+
+    @media (min-width: $laptop) {
+      width: 13%;
+      align-self: flex-start;
+    }
+
+    .search, .reset {
+      background-color: transparent;
+      width: 100%;
+      padding: $space * 0.4 $space * 0.25;
+      box-sizing: border-box;
+      border-radius: 15px;
+      font: $montserrat-14-regular;
+      border: 1px solid;
+      text-align: center;
+    }
+
+    .search {
+      margin-bottom: $space * 0.6;
+    }
+
+    .reset {
+      transition: all 250ms ease;
+      cursor: pointer;
+      margin-bottom: $space;
+      &:hover {
+        background-color: $dark;
+        color: $white;
+      }
+    }
+  }
+
+  .groups {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: $laptop) {
+      width: 85%;
+    }
+
+    .group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $space;
+      margin-top: $space;
+      justify-content: center;
+    }
+  }
+
+  .loadMore {
+    width: 50%;
+    background-color: transparent;
+    padding: $space * 0.75 $space * 0.25;
+    border-radius: 25px;
+    font: $montserrat-16-regular;
+    border: 1px solid;
+    text-align: center;
+    transition: all 250ms ease;
+    cursor: pointer;
+    margin-top: $space * 2;
+    align-self: center;
+    
+    &:hover {
+      background-color: $dark;
+      color: $white;
+    }
+
+    @media (min-width: $laptop) {
+      width: 25%;
+    }
+  }
+}

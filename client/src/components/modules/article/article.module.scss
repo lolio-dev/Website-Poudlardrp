@@ -1,0 +1,77 @@
+@import '../../../style/global';
+
+.article {
+  transition: transform 500ms ease;
+  margin: $space * 1.5 $space * 1.5;
+  background-color: $white;
+  width: 292px;
+  height: 326px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    height: 32%;
+    object-fit: cover;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: $space * 1.2;
+    height: 57%;
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 3%;
+      height: 13%;
+      font: $montserrat-24-regular;
+      @media (min-width: $tablet) {
+        font: $montserrat-32-medium;
+      }
+    }
+
+    h2 {
+      margin-bottom: 5%;
+      height: 10%;
+      color: $secondary;
+      font: $montserrat-16-regular;
+      @media (min-width: $tablet) {
+        font: $montserrat-24-regular;
+      }
+    }
+
+    p {
+      font: $montserrat-11-regular;
+      @media (min-width: $tablet) {
+        font: $montserrat-16-regular;
+      }
+    }
+
+    .text {
+      margin-bottom: 2%;
+      height: 58%;
+    }
+
+    .date {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 7%;
+      color: $primary;
+
+      p {
+        margin-left: $space * 0.5;
+      }
+    }
+  }
+  @media (min-width: $tablet) {
+    width: 404px;
+    height: 480px;
+  }
+}

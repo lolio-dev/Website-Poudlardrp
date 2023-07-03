@@ -1,0 +1,12 @@
+{
+  "article": {
+    "ago": "Il y a"
+  },
+  "date": {
+    "seconds": "secondes",
+    "minutes": "minutes",
+    "hours": "heures",
+    "months": "mois",
+    "years": "ans"
+  }
+}

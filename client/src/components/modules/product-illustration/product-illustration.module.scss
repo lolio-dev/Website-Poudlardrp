@@ -1,0 +1,83 @@
+@import './../../../style/global';
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.staticimage {
+  max-width: 705.88px;
+}
+
+.mixedimage {
+  display: block;
+
+  @media (min-width: $laptop) {
+    display: none;
+  }
+}
+
+.mixedcanvas {
+  display: none;
+  border-radius: 5%;
+
+  @media (min-width: $laptop) {
+    display: block;
+  }
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+
+  .rotationIcon {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: $space * 0.5;
+    left: $space * 0.5;
+    font-size: 2em;
+    color: $white;
+
+    @media (max-width: $laptop) {
+      display: none;
+    }
+  }
+}
+
+.disabled {
+  filter: grayscale(100%);
+}
+
+.banner {
+  position: absolute;
+  bottom: 49px;
+  right: -40px;
+  color: white;
+  text-transform: uppercase;
+  width: 282.37px;
+  height: 37.26px;
+  transform: rotate(-35deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: block;
+    font: $montserrat-16-bold;
+    font-style: normal;
+    line-height: 13px;
+  }
+
+  @media (max-width: $tablet) {
+    right: -80px;
+    bottom: 35px;
+
+    height: 30px;
+    width: 300px;
+
+    span {
+      font: $montserrat-11-bold;
+    }
+  }
+}

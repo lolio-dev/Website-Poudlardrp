@@ -1,0 +1,45 @@
+@import './../../../style/global';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space * 2.5;
+  margin-bottom: $space * 2;
+  padding: 0 $space;
+
+  .playerHead {
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .info,
+    .warning {
+      display: flex;
+      align-items: center;
+      gap: $space * 0.25;
+      svg {
+        min-width: 16px;
+      }
+      p {
+        font: $montserrat-11-bold;
+      }
+    }
+    .info {
+      p {
+        margin: $space * 1.5 0;
+      }
+    }
+  }
+
+  .send:hover {
+    color: $primary !important;
+    font-weight: 600 !important;
+  }
+}

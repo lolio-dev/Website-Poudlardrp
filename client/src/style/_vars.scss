@@ -1,0 +1,59 @@
+$space: 1em;
+
+// Breakpoints
+$phone: 0;
+$tablet: 650px;
+$laptop: 1240px;
+$desktop: 1440px;
+
+$phone-header-height: 29px;
+$desktop-header-height: 53px;
+$header-padding: 1em;
+
+$footer-height: 148px;
+$footer-padding: 3em;
+
+$phone-main-margin: 2em;
+$desktop-main-margin: 4em;
+
+@function getDesktopMainTotalMargin($main-margin-top) {
+  @return (
+    calc($desktop-header-height + ($header-padding * 2) + $main-margin-top)
+  )
+};
+
+@function getPhoneMainTotalMargin($main-margin-top) {
+  @return (
+    calc($phone-header-height + ($header-padding * 2) + $main-margin-top)
+  )
+};
+
+@function getDesktopMainTotalHeight($main-margin-top) {
+  @return (
+    calc(
+      100vh - (
+        ($desktop-header-height + ($header-padding * 2) + $main-margin-top)
+        + 
+        ($footer-height + ($footer-padding * 2))
+      )
+    )
+  )
+};
+
+@function getPhoneMainTotalHeight($main-margin-top) {
+  @return (
+    calc(
+      100vh - (
+        ($phone-header-height + ($header-padding * 2) + $main-margin-top)
+        + 
+        ($footer-height + ($footer-padding * 2))
+      )
+    )
+  )
+};
+
+//box-shadow
+$header-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+  0 2px 4px -1px rgba(0, 0, 0, 0.2);
+$drawer-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+  0 8px 10px -5px rgba(0, 0, 0, 0.2);

@@ -1,0 +1,114 @@
+@import './src/style/global';
+
+.main {
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-top: calc(29px + 2em + 2em);
+  margin-bottom: calc(24px + 2em);
+}
+
+.transactions {
+  background: #ffffff;
+  border-radius: 25px;
+
+  @media (min-width: $laptop) {
+    padding: 24px;
+  }
+
+  .transaction__title {
+    margin-bottom: $space;
+    margin-left: -2px;
+
+    @media (min-width: $tablet) {
+      font: $montserrat-36-medium;
+    }
+
+    font: $montserrat-20-medium;
+  }
+
+  .transactions__container {
+    @media (min-width: $laptop) {
+      margin-bottom: 66px;
+    }
+
+    margin-bottom: 20px;
+
+    .transaction {
+      @media (min-width: $laptop) {
+        padding-right: 25px;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $grey;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 32px;
+        padding-bottom: 26px;
+      }
+
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+
+      .transaction__id {
+        @media (min-width: $tablet) {
+          font: $montserrat-24-medium !important;
+        }
+        width: 40%;
+        font: $montserrat-16-medium;
+      }
+
+      .transaction__date,
+      .transaction__price {
+        @media (min-width: $tablet) {
+          font: $montserrat-24-regular !important;
+        }
+
+        width: 10%;
+        font: $montserrat-16-regular;
+      }
+
+      .transaction__date {
+        text-align: end;
+      }
+
+      .transaction__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-width: 5em;
+        gap: 7px;
+      }
+
+      .transaction__gem {
+        @media (min-width: $laptop) {
+          width: 24px;
+          height: 24px;
+        }
+
+        width: 12px;
+        height: 12px;
+      }
+
+      .transaction__icon {
+        @media (min-width: $tablet) {
+          height: 33px;
+          width: 33px;
+          font-size: 33px;
+        }
+
+        height: 16px;
+        width: 16px;
+        font-size: 16px;
+
+        color: #09b4fd;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .transactions__empty {
+    font: $montserrat-16-regular;
+  }
+}

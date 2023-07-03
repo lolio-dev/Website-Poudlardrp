@@ -1,0 +1,42 @@
+{
+  "header": {
+    "nav": {
+      "shop": {
+        "title": "Traverse",
+        "subtitle": "Achetez... prospérez !",
+        "money": "Gringotts",
+        "wands": "Ollivanders",
+        "cosmetics": "Guipure",
+        "improvements": "Fleury et Bott",
+        "consumables": "Apothicaire",
+        "pets": "Eeylops",
+        "mounts": "Écurie Magique"
+      },
+      "game": {
+        "title": "Jouer",
+        "subtitle": "Devenez un sorcier",
+        "launcher": "Launcher",
+        "vote": "Vote"
+      },
+      "quibbler": {
+        "title": "Chicaneur",
+        "subtitle": "Quoi de neuf ?",
+        "news": "Actualités",
+        "wiki": "Glossaire",
+        "cgu": "Conditions d'utilisation",
+        "cgv": "Conditions de ventes"
+      },
+      "profile": {
+        "login_btn": "Se connecter",
+        "profile": "Profil",
+        "cart": "Panier",
+        "invoices": "Factures",
+        "sign_out": "Logout"
+      },
+      "langages": {
+        "fr": "🇫🇷",
+        "en": "🇬🇧 ✓"
+      }
+    }
+  }
+}

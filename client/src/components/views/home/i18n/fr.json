@@ -1,0 +1,24 @@
+{
+  "home": {
+    "copy": "COPIÉ",
+    "players_online": "joueurs en ligne",
+    "summary": {
+      "title": "Et si la magie existait ?"
+    },
+    "stats": {
+      "spells": "Plus de 50 sorts !",
+      "adventure": "Une aventure unique",
+      "boss": "Des boss légendaires"
+    },
+    "presentation": {
+      "part1": "PoudlardRP est un ",
+      "server_type": "serveur minecraft MMORPG",
+      "part2": " dans lequel vous incarnez un nouvel élève prêt à intégrer la célèbre école de magie Poudlard. Vous allez évoluer dans un immense monde ouvert tiré de l'œuvre de JK Rowling. Vous aurez l'occasion de suivre une série de quêtes, d'apprendre des sorts, faire des potions, des duels et affronter des créatures magiques.",
+      "part3": "Préparez vos baguettes, tentez l'aventure !",
+      "discover": "Découvrir"
+    },
+    "partners": {
+      "title": "Partenaires"
+    }
+  }
+}

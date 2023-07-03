@@ -1,0 +1,13 @@
+@use "sass:list";
+
+$rarities: (
+  'common': [#36BB6B, #05978D],
+  'rare': [#1978E9, #8119E9],
+  'legendary': [#EBCB25, #F3A101]
+);
+
+@each $rarityName, $rarityValue in $rarities {
+  .#{$rarityName} {
+    background: linear-gradient(180deg, list.nth($rarityValue, 1) 0%, list.nth($rarityValue, 2) 100%);
+  }
+}

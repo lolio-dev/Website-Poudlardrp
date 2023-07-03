@@ -1,0 +1,60 @@
+{
+  "cgv": {
+    "start_at": "Applicables à compter du 29/01/2022",
+    "scope": {
+      "title": "Clause n° 1 : Objet et champ d'application",
+      "paragraph": "Les présentes conditions générales de vente (cgv) constituent le socle de la négociation commerciale et sont systématiquement adressées ou remises à chaque acheteur pour lui permettre de passer commande.",
+      "paragraph2": {
+        "sentence": "Les conditions générales de vente décrites ci-après détaillent les droits et obligations de l'association Wizard Universe et de son client dans le cadre de la vente des marchandises suivantes :",
+        "list": "Packs de gemmes"
+      },
+      "paragraph3": "Toute acceptation du devis/bon de commande en ce compris la clause « Je reconnais avoir pris connaissance et j'accepte les conditions générales de vente ci-annexées » implique l'adhésion sans réserve de l'acheteur aux présentes conditions générales de vente."
+    },
+    "prices": {
+      "title": "Clause n° 2 : Prix",
+      "paragraph": "Les prix des marchandises vendues sont ceux en vigueur au jour de la prise de commande. Ils sont libellés en euros et calculés hors taxes. Par voie de conséquence, ils seront majorés du taux de tva et des frais de transport applicables au jour de la commande.",
+      "paragraph2": "L' association Wizard Universe s'accorde le droit de modifier ses tarifs à tout moment. Toutefois, elle s'engage à facturer les marchandises commandées aux prix indiqués lors de l'enregistrement de la commande."
+    },
+    "rebates": {
+      "title": "Clause n° 3 : Rabais et ristournes",
+      "paragraph": "Les tarifs proposés comprennent les rabais et ristournes que l' association Wizard Universe serait amenée à octroyer compte tenu de ses résultats ou de la prise en charge par l'acheteur de certaines prestations."
+    },
+    "discount": {
+      "title": "Clause n° 4 : Escompte",
+      "paragraph": "Aucun escompte ne sera consenti en cas de paiement anticipé."
+    },
+    "terms": {
+      "title": "Clause n° 5 : Modalités de paiement",
+      "paragraph": "Le règlement des commandes s'effectue :",
+      "list": {
+        "item": "Soit par paypal",
+        "item2": "Soit par stripe"
+      }
+    },
+    "estate": {
+      "title": "Clause n° 6 : Clause de réserve de propriété",
+      "paragraph": "L' association Wizard Universe conserve la propriété des biens vendus jusqu'au paiement intégral du prix, en principal et en accessoires. À ce titre, si l'acheteur fait l'objet d'un redressement ou d'une liquidation judiciaire, l' association Wizard Universe se réserve le droit de revendiquer, dans le cadre de la procédure collective, les marchandises vendues et restées impayées."
+    },
+    "delivery": {
+      "title": "Clause n° 7 : Livraison",
+      "paragraph": "La livraison est effectuée :",
+      "list": "Instantanément après paiement",
+      "paragraph2": "Par voie de conséquence, tout retard raisonnable dans la livraison des produits ne pourra pas donner lieu au profit de l'acheteur à :",
+      "list2": {
+        "item": "l'allocation de dommages et intérêts",
+        "item2": "l'annulation de la commande"
+      },
+      "paragraph3": "Le risque de transfert est supporté en totalité par l'acheteur."
+    },
+    "force_majeure": {
+      "title": "Clause n° 8 : Force majeure",
+      "paragraph": "La responsabilité de l' association Wizard Universe ne pourra pas être mise en oeuvre si la non-exécution ou le retard dans l'exécution de l'une de ses obligations décrites dans les présentes conditions générales de vente découle d'un cas de force majeure. À ce titre, la force majeure s'entend de tout événement extérieur, imprévisible et irrésistible au sens de l'article 1148 du Code civil."
+    },
+    "court": {
+      "title": "Clause n° 9 : Tribunal compétent",
+      "paragraph": "Tout litige relatif à l'interprétation et à l'exécution des présentes conditions générales de vente est soumis au droit français.",
+      "paragraph2": "À défaut de résolution amiable, le litige sera porté devant le Tribunal de commerce de Saint-Gély-du-Fesc."
+    },
+    "sign": "Fait à Saint-Gély-du-Fesc, le 29/01/2022"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-concentric-order"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": null,
+    "max-nesting-depth": null,
+    "selector-max-compound-selectors": null,
+    "selector-class-pattern": null
+  }
+}

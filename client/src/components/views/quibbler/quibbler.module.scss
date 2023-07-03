@@ -1,0 +1,18 @@
+@import '../../../style/global';
+
+.main {
+  position: relative;
+  min-height: getPhoneMainTotalHeight(1em);
+  margin-top: getPhoneMainTotalMargin(1em);
+
+  @media (min-width: $laptop) {
+    min-height: getDesktopMainTotalHeight(2em);
+    margin-top: getDesktopMainTotalMargin(2em);
+  }
+
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

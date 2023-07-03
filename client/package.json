@@ -1,0 +1,121 @@
+{
+  "name": "wizard-universe-website",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Website mainly used to buy items on the minecraft server Wizard Universe",
+  "homepage": "https://www.poudlardrp.fr",
+  "author": "Wizard universe (https://gitlab.com/WizardsUniverse)",
+  "repository": "https://gitlab.com/WizardsUniverse/web/website",
+  "license": "UNLICENSED",
+  "main": "src/index.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "testui": "vitest --ui",
+    "test:e2e": "cypress run",
+    "cypress": "cypress open",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\""
+  },
+  "dependencies": {
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "@vitejs/plugin-react": "4.0.0",
+    "axios": "0.25.0",
+    "js-file-download": "0.4.12",
+    "jwt-decode": "3.1.2",
+    "lodash": "4.17.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.3.1",
+    "react-multi-lang": "2.2.0",
+    "react-router-dom": "6.2.1",
+    "react-toastify": "8.2.0",
+    "sass": "1.49.0",
+    "three": "0.139.1",
+    "typescript": "4.4.2",
+    "web-vitals": "2.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/github": "7.2.0",
+    "@semantic-release/npm": "7.0.9",
+    "@semantic-release/release-notes-generator": "9.0.1",
+    "@types/axios": "0.14.0",
+    "@types/jwt-decode": "3.1.0",
+    "@types/lodash": "4.14.178",
+    "@types/node": "16.7.13",
+    "@types/react": "17.0.20",
+    "@types/react-dom": "17.0.9",
+    "@types/three": "0.139.0",
+    "@typescript-eslint/eslint-plugin": "5.10.1",
+    "@typescript-eslint/parser": "5.10.1",
+    "@vitest/ui": "^0.31.0",
+    "@vitest/coverage-c8": "0.31.0",
+    "cypress": "10.3.0",
+    "eslint-config-prettier": "7.1.0",
+    "husky": "7.0.4",
+    "jsdom": "^22.0.0",
+    "lint-staged": "10.5.3",
+    "minimist": "1.2.6",
+    "prettier": "2.2.1",
+    "stylelint": "13.8.0",
+    "stylelint-config-concentric-order": "4.0.1",
+    "stylelint-config-sass-guidelines": "7.1.0",
+    "ts-node": "10.9.1",
+    "vite": "4.3.4",
+    "vitest": "0.31.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts, tsx}": "eslint --cache --fix",
+    "*.scss": "stylelint --fix",
+    "src/**/*": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "moduleFileExtensions": [
+    "js",
+    "tsx",
+    "json",
+    "scss"
+  ]
+}

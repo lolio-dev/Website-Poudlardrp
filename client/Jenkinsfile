@@ -1,0 +1,59 @@
+pipeline {
+  tools {
+    nodejs '16.13.1'
+  }
+
+  agent any
+
+  stages {
+    stage('Dependencies') {
+      steps {
+        sh "yarn"
+      }
+    }
+    stage('Build') {
+      steps {
+        sh "yarn build"
+      }
+    }
+    stage('Docker Build') {
+      steps {
+        script {
+          def tag = env.BRANCH_NAME.toLowerCase()
+          if(tag == "master") {
+            tag = "latest"
+          }
+
+          lastImage = sh (script: "docker images --filter=reference=docker.poudlardrp.fr/website:${tag} --format '{{.ID}}'", returnStdout: true)
+          image = docker.build("docker.poudlardrp.fr/website:${tag}",".")
+        }
+      }
+    }
+    stage('Docker Publish') {
+      steps {
+        script {
+          image.push()
+        }
+      }
+    }
+
+    stage('Docker Clean') {
+      when {
+        expression {
+          return lastImage != ""
+        }
+      }
+      steps {
+        script {
+          if(lastImage != "") {
+            try {
+              sh "docker rmi ${lastImage}"
+            } catch (err){
+              echo err.getMessage()
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "3mu2",
+    "title": "Kit de farces et attrapes",
+    "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
+    "price": "1",
+    "image": "https://i.pinimg.com/736x/87/c2/a9/87c2a9dc60af6919808dd06ec2c32c47--amazing-art-weasley-twins.jpg",
+    "category": "consumables",
+    "tags": ["utilitaires"],
+    "quantity": 3
+  },
+  {
+    "id": "6v1s",
+    "title": "Monture - Sombral",
+    "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
+    "price": "2",
+    "image": "https://potterheadsquillblog.files.wordpress.com/2018/08/sombrale-mea.jpg",
+    "category": "mounts",
+    "tags": ["volante", "terrestre"],
+    "quantity": 1
+  }
+]

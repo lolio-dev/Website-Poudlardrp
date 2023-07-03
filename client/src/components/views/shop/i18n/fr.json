@@ -1,0 +1,27 @@
+{
+  "shop": {
+    "search": "RECHERCHER",
+    "reinitialize": "RÉINITIALISER",
+    "filters": {
+      "rarities": {
+        "title": "PAR RARETÉS",
+        "common": "Commun",
+        "rare": "Rare",
+        "legendary": "Légendaire"
+      },
+      "tags": {
+        "title": "PAR TAGS"
+      },
+      "prices": {
+        "title": "PAR PRIX",
+        "asc": "Ordre croissant",
+        "dsc": "Ordre décroissant"
+      },
+      "profile": {
+        "title": "PAR PROFIL",
+        "canBy": "Masquer si trop cher"
+      }
+    },
+    "showMore": "Voir plus d'articles"
+  }
+}

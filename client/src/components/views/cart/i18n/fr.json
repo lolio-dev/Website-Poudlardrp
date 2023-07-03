@@ -1,0 +1,20 @@
+{
+  "cart": {
+    "title": "Votre panier",
+    "confirm_cart": {
+      "title": "Récapitulatif",
+      "total": "Total",
+      "cancel_button_label": "Annuler",
+      "validate_button_label": "Valider",
+      "free_label": "Gratuit"
+    },
+    "empty_cart": {
+      "title": "Votre panier est vide",
+      "cta_label": "Commencer vos achats"
+    },
+    "payment": {
+      "total_label": "Total",
+      "confirm_button_label": "Confirmer"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import './src/style/global';
+
+.main {
+  @media (min-width: $laptop) {
+    padding: 0 75px;
+  }
+
+  padding: 0 25px;
+  margin-bottom: 25px;
+
+  .header {
+    .title {
+      @media (min-width: $laptop) {
+        font: $montserrat-36-medium;
+      }
+
+      font: $montserrat-24-medium;
+      margin: 0;
+    }
+
+    .description {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font: $montserrat-16-regular;
+    }
+  }
+
+  .gems {
+    @media (min-width: $tablet) {
+      justify-content: space-around;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .noOffers {
+      @media screen and (min-width: $tablet) {
+        font: $montserrat-20-regular;
+      }
+
+      font: $montserrat-14-regular;
+    }
+  }
+}

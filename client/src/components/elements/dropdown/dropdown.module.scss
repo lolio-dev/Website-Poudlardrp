@@ -1,0 +1,100 @@
+@import './src/style/global';
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+
+  &::after {
+    content: '';
+    height: 1px;
+    width: 0;
+    background-color: $white;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 500ms ease;
+
+    @media (min-width: $laptop) {
+      display: block;
+    }
+  }
+
+  &:hover::after {
+    width: 50%;
+  }
+
+  .dropdownButton {
+    width: 100%;
+    padding: 0.5em 1em;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    font: $montserrat-24-regular;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropdownContent {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    z-index: 1;
+    font: $montserrat-16-regular;
+
+    .link {
+      display: block;
+      padding: 8px 12px;
+      text-decoration: none;
+      text-align: center;
+      color: $light-grey;
+      font-size: 1.15em;
+      border-radius: 5px;
+      border: none;
+      background-color: transparent;
+
+      &:hover {
+        font-weight: bold;
+
+        @media (min-width: $laptop) {
+          background-color: $light-grey;
+        }
+      }
+
+      @media (min-width: $laptop) {
+        background-color: $white;
+        color: $black;
+      }
+    }
+
+    button.link {
+      margin: 0;
+      width: 100%;
+      cursor: pointer;
+      font: $montserrat-16-regular;
+      font-size: 1.15em;
+    }
+
+    @media (min-width: $laptop) {
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 8px 16px 0 #00000020;
+    }
+  }
+
+  .open {
+    display: block;
+  }
+}

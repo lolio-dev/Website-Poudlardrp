@@ -1,0 +1,38 @@
+@import '../../../../style/global';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 5em;
+  margin-top: $space * 4;
+
+  h2 {
+    font: $montserrat-24-medium;
+    margin: $space 0;
+  }
+
+  h3 {
+    font: $montserrat-20-medium;
+    margin: $space * 0.75 0;
+  }
+
+  b {
+    font: $montserrat-16-bold;
+  }
+
+  p {
+    font: $montserrat-16-regular;
+    margin: $space * 0.5 0;
+    white-space: pre-wrap;
+  }
+
+  li {
+    font: $montserrat-14-regular;
+    margin: $space * 0.25 0;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+  }
+}

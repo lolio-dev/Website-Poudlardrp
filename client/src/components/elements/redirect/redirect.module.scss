@@ -1,0 +1,28 @@
+@import '/src/style/global';
+
+.link {
+  box-sizing: border-box;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transition: all 350ms ease;
+
+  border: 2px $dark solid;
+  background: none;
+  padding: 0 $space;
+
+  height: 46.4px;
+
+  text-decoration: none;
+  white-space: nowrap;
+  color: $dark;
+
+  font: $montserrat-16-bold;
+
+  &:hover {
+    background-color: rgba($dark, 0.1);
+    cursor: pointer;
+  }
+}

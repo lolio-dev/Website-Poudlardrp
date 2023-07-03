@@ -1,0 +1,18 @@
+{
+  "gems": {
+    "title": "Acheter des gemmes",
+    "description": "Les gemmes seront la monaie virtuelle utilisée pour vos achats sur la boutique"
+  },
+  "gemsModal": {
+    "title": "Récapitulatif",
+    "details": {
+      "gem_number": "Nombre de gemmes",
+      "gem_bonus_number": "Gemmes en bonus",
+      "price": "Prix"
+    },
+    "actions": {
+      "stripe": "Payer avec Stripe",
+      "paypal": "Payer avec Paypal"
+    }
+  }
+}

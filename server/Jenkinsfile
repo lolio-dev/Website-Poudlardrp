@@ -1,0 +1,89 @@
+def lastImage    
+def image    
+pipeline {
+	agent any
+		environment {
+			SONAR_CREDENTIALS = credentials('Sonarqube_token')
+		}
+
+	stages {
+		stage('Git') {
+			steps {
+				git url: 'https://gitlab.com/WizardsUniverse/web/webapi.git', credentialsId: 'Gitlab-Qilat-auth', branch: "${env.BRANCH_NAME}"
+			}
+		}
+
+		stage('Unit tests') {
+			tools {
+				nodejs '16.13.1'
+			}
+
+			steps {
+				sh 'yarn'
+					sh 'yarn test'
+			}
+		}
+
+		/*stage('Analysis') {
+			environment {
+				scannerHome = tool 'Scanner'
+			}
+
+			steps {
+				withSonarQubeEnv(installationName: 'Main') {
+					sh '${scannerHome}/bin/sonar-scanner'
+				}
+			}
+		}*/
+
+
+		stage('Docker Build') {  
+			when {
+				expression {
+					return env.BRANCH_NAME == 'master'
+				}
+			}
+			steps {
+				script {
+					def tag = env.BRANCH_NAME.toLowerCase()    
+						if(tag == "master") {    
+							tag = "latest"    
+						}    
+
+					lastImage = sh (script: "docker images --filter=reference=docker.poudlardrp.fr/webapi:${tag} --format '{{.ID}}'", returnStdout: true)    
+						withCredentials([usernamePassword(credentialsId: 'jenkins-nexus-account', passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_USERNAME')]) {    
+							image = docker.build("docker.poudlardrp.fr/webapi:${tag}","--build-arg NEXUS_USERNAME=${NEXUS_USERNAME} --build-arg NEXUS_PASSWORD=${NEXUS_PASSWORD} .")    
+						}
+				}
+			}
+		}    
+
+		stage('Docker Publish') {    
+			when {
+				expression {
+					return env.BRANCH_NAME == 'master'
+				}
+			}
+			steps {
+				script {
+					image.push()    
+				}
+			}
+		}    
+
+		stage('Docker Clean') {    
+			when {
+				expression {
+					return env.BRANCH_NAME == 'master' && lastImage != ""
+				}
+			}
+			steps {
+				script {
+					catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
+						sh "docker rmi ${lastImage}"
+					}
+				} 
+			}
+		}
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "header": {
+    "nav": {
+      "shop": {
+        "title": "Boutique",
+        "subtitle": "Achetez... prospérez !",
+        "money": "Monaies",
+        "wands": "Baguettes",
+        "improvements": "Améliorations",
+        "consumables": "Consommables",
+        "hats": "Chapeaux",
+        "titles": "Titres",
+        "pets": "Compagnons",
+        "utils": "Utilitaires"
+      },
+      "game": {
+        "title": "Jouer",
+        "subtitle": "Devenez un sorcier",
+        "launcher": "Launcher",
+        "vote": "Vote"
+      },
+      "quibbler": {
+        "title": "Chicaneur",
+        "subtitle": "Quoi de neuf ?",
+        "article": "Actualités",
+        "wiki": "Glossaire",
+        "cgu": "Conditions d'utilisation",
+        "cgv": "Conditions de ventes"
+      },
+      "profile": {
+        "microsoft": {
+          "signin": "Se connecter"
+        },
+        "profile": "Profil",
+        "cart": "Panier",
+        "invoices": "Factures",
+        "sign_out": "Déconnexion"
+      },
+      "langages": {
+        "fr": "🇫🇷 ✓",
+        "en": "🇬🇧"
+      }
+    }
+  }
+}

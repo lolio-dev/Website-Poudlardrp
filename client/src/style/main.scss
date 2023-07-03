@@ -1,0 +1,21 @@
+@import 'global';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  user-select: text;
+  background-color: $white;
+}
+
+main {
+  min-height: getPhoneMainTotalHeight($phone-main-margin);
+  margin-top: getPhoneMainTotalMargin($phone-main-margin);
+
+  @media (min-width: $laptop) {
+    min-height: getDesktopMainTotalHeight($desktop-main-margin);
+    margin-top: getDesktopMainTotalMargin($desktop-main-margin);
+  }
+}

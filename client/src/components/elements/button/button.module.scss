@@ -1,0 +1,22 @@
+@import './src/style/global';
+
+@mixin medium {
+  font-size: 24px;
+}
+
+.button {
+  width: fit-content;
+  height: fit-content;
+
+  padding: $space * 0.5 $space;
+
+  outline: none;
+}
+
+.medium {
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
+
+  font-size: 24px;
+}

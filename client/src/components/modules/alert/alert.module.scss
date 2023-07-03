@@ -1,0 +1,44 @@
+@import '../../../style/global';
+
+.alert {
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: $space * 3;
+
+  padding: 0 $space;
+
+  background-color: #f3b212;
+  color: $white;
+  font: $montserrat-11-regular;
+
+  z-index: 10;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font: $montserrat-16-regular;
+  }
+
+  @media (min-width: $laptop) {
+    font: $montserrat-16-regular;
+    height: $space * 2;
+  }
+}
