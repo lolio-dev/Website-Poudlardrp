@@ -1,0 +1,124 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+* {
+  margin: 0;
+}
+
+main {
+  @media (min-width: $laptop) {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+  padding-left: 28px;
+  padding-right: 28px;
+
+  @media (min-width: $tablet) {
+    margin-top: $space * 6;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: $space * 9.5;
+  }
+
+  margin-top: $space * 4.5;
+}
+
+.transactions {
+  @media (min-width: $laptop) {
+    padding: 24px;
+  }
+
+  .transactions__title {
+    margin-bottom: $space;
+    margin-left: -2px;
+  }
+
+  .transactions__container {
+    @media (min-width: $laptop) {
+      margin-bottom: 66px;
+    }
+
+    margin-bottom: 20px;
+
+    .transaction {
+      @media (min-width: $laptop) {
+        padding-right: 25px;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $grey;
+
+      @media (min-width: $laptop) {
+        margin-bottom: 32px;
+        padding-bottom: 26px;
+      }
+
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+
+      .transaction__id {
+        @media (min-width: $laptop) {
+          font: $montserrat-24-bold !important;
+        }
+
+        @media (min-width: $tablet) {
+          font: $montserrat-16-bold;
+        }
+
+        font: $montserrat-11-bold;
+      }
+
+      .transaction__date, .transaction__price {
+        @media (min-width: $laptop) {
+          font: $montserrat-24-regular !important;
+        }
+
+        @media (min-width: $tablet) {
+          font: $montserrat-16-regular;
+        }
+
+        font: $montserrat-11-regular;
+      }
+
+      .transaction__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 5em;
+      }
+
+      .transaction__gem {
+        @media (min-width: $laptop) {
+          width: 24px;
+          height: 24px;
+        }
+
+        width: 12px;
+        height: 12px;
+      }
+
+      .transaction__icon {
+        @media (min-width: $laptop) {
+          height: 33px;
+          width: 33px;
+          font-size: 33px;
+        }
+
+        height: 16px;
+        width: 16px;
+        font-size: 16px;
+
+        color: #09B4FD;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .transactions__empty {
+    font: $montserrat-16-regular;
+  }
+}

@@ -1,0 +1,43 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+<main *ngIf="loaded">
+  <section class='product' *ngIf='item'>
+    <div class='product__image'>
+      <img src='{{ item.image }}' alt='Image du produit'>
+    </div>
+
+    <div class='product__sidebar'>
+      <div class='product__info'>
+        <h1 class='product__title'>{{ item.title }}</h1>
+        <span class='separator'></span>
+        <p class='product__description'>{{item.description}}</p>
+      </div>
+
+      <div class='product__actions'>
+        <div custom-number class='product__counter counter counter--medium' [size]='btnSizes.medium'
+             (valueChanges)='updatePrice($event)'></div>
+        <button custom-button [ngClass]='basketBtnClass' class='product__basketbtn' label='Ajouter au panier'
+                (click)='handleAddBasket()'></button>
+        <button custom-button [ngClass]='priceBtnClass' class='product__price' [label]='productPrice.toString()'>
+          <svg style='width:24px;height:24px' viewBox='0 0 24 24'>
+            <path fill='currentColor'
+                  d='M12 2C6.47 2 2 6.5 2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4S20 7.58 20 12C20 16.42 16.42 20 12 20M8 14L7 8L10 10L12 7L14 10L17 8L16 14H8M8.56 16C8.22 16 8 15.78 8 15.44V15H16V15.44C16 15.78 15.78 16 15.44 16H8.56Z' />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class='similar-products' *ngIf='similarItems?.length'>
+    <h1 class='similar-products__title'>Produits Similaires</h1>
+
+    <div class='similar-products__products'>
+      <app-items class='similar-products__product' *ngFor='let item of similarItems' [type]='itemCardType' [title]='item.title'
+                 [description]='item.description' [price]='item.price' [image]='item.image' [id]='item.productId'></app-items>
+    </div>
+  </section>
+</main>
+<app-footer *ngIf="loaded"></app-footer>

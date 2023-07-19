@@ -1,0 +1,84 @@
+@import '/src/styles/fonts';
+@import '/src/styles/colors';
+@import '/src/styles/vars';
+
+@mixin small {
+  width: 110px;
+  height: 34px;
+
+  .counter-label {
+    font: $montserrat-16-regular !important;
+  }
+
+  .actions {
+    flex-direction: row-reverse !important;
+
+    .decrease {
+      border-top: none !important;
+       border-right: 2px solid $dark;
+    }
+  }
+}
+
+@mixin medium {
+  width: 94px;
+  height: 58px;
+
+  .counter-label {
+    font: $montserrat-24-regular;
+  }
+
+  .actions {
+    flex-direction: column;
+
+    .decrease {
+      border-top: 2px solid $dark;
+    }
+  }
+}
+
+.counter {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid $dark;
+
+  display: flex;
+  justify-content: space-between;
+
+  .counter-label, .increase, .decrease {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .increase, .decrease {
+    width: 27.14px;
+    height: 30px;
+  }
+
+  .counter-label {
+    width: 100%;
+  }
+
+  .actions {
+    display: flex;
+    border-left: 2px solid $dark;
+    font: $montserrat-16-bold;
+  }
+
+  &--small {
+    @include small
+  }
+
+  &--medium {
+    @include medium
+  }
+
+  &--mix {
+    @media (max-width: $laptop) {
+      @include small;
+    }
+
+    @include medium;
+  }
+}

@@ -1,0 +1,27 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+<app-header *ngIf="loaded" [user]='user'></app-header>
+<main *ngIf="loaded">
+  <div class='offers'>
+    <div *ngFor='let offer of gemsOffers'>
+      <app-gems-offer [offer]='offer' [image]='gemImage' (offerSelected)='setOfferSelected($event)'></app-gems-offer>
+    </div>
+  </div>
+
+  <app-modal id='paying-modal'>
+    <h1 header>Acheter des gemmes</h1>
+    <div body>
+      <h2 class="info">Gemmes : {{offerSelected.gems}}</h2>
+      <h2 class="info">Bonus : {{offerSelected.bonus}}</h2>
+      <h2 class="info">Prix HT : {{offerSelected.price.toFixed(2)}}€</h2>
+      <h2 class="info">Prix TTC : {{(offerSelected.price + (offerSelected.price * tva )).toFixed(2)}}€</h2>
+    </div>
+    <div footer>
+      <button custom-button class="paypal-btn" [ngClass]='primaryButtonClass' label='Paypal' (click)="paidWithPaypal()"></button>
+      <button custom-button [ngClass]='primaryButtonClass' label='Stripe' (click)="paidWithStripe()"></button>
+    </div>
+  </app-modal>
+
+</main>
+<app-footer *ngIf="loaded"></app-footer>

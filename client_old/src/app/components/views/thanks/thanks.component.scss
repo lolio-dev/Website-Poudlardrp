@@ -1,0 +1,41 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .container {
+    position: relative;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .block {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    box-shadow: inset 0px 0px 8px 8px $light;
+  }
+
+  h1 {
+    font: $montserrat-24-medium;
+    margin-top: $space * 1.5;
+  }
+
+  p {
+    font: $montserrat-20-regular;
+    margin: 0 0 $space * 3 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark;
+  }
+}

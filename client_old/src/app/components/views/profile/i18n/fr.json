@@ -1,0 +1,70 @@
+{
+  "PROFIL_CARD": {
+    "TITLE": "Information du profil",
+    "IDENTITY_SECTION": {
+      "TITLE": "Identité",
+      "INPUTS": {
+        "USERNAME": {
+          "PLACEHOLDER": "Pseudo"
+        },
+        "FIRSTNAME": {
+          "PLACEHOLDER": "Prenom"
+        },
+        "LASTNAME": {
+          "PLACEHOLDER": "Nom"
+        }
+      }
+    },
+    "LOCALISATION_SECTION": {
+      "TITLE": "Localisation",
+      "INPUTS": {
+        "ADRESSE1": {
+          "PLACEHOLDER": "Adresse"
+        },
+        "ADRESSE2": {
+          "PLACEHOLDER": "Complément"
+        },
+        "POSTAL_CODE": {
+          "PLACEHOLDER": "Code postal"
+        }
+      }
+    },
+    "CONFIDENTIAL_SECTION": {
+      "TITLE": "Confidentiel",
+      "INPUTS": {
+        "EMAIL": {
+          "PLACEHOLDER": "Adresse mail"
+        }
+      },
+      "CHANGE_PASSWORD_BUTTON": "Changer le mot de passe"
+    },
+    "MODIFY_BUTTON": "Modifier",
+    "CANCEL_BUTTON": "Annuler",
+    "VALIDATE_BUTTON": "Valider"
+  },
+  "PASSWORD_CHANGEMENT_MODAL": {
+    "TITLE": "Changement du mot de passe",
+    "CANCEL_BUTTON": "Annuler",
+    "VALIDATE_BUTTON": "Changer",
+    "INPUTS": {
+      "OLD_PASSWORD": {
+        "PLACEHOLDER": "Ancien mot de passe"
+      },
+      "NEW_PASSWORD": {
+        "PLACEHOLDER": "Nouveau mot de passe"
+      },
+      "NEW_PASSWORD_CONFIRMATION": {
+        "PLACEHOLDER": "Confirmation"
+      }
+    }
+  },
+  "DELETE_ACCOUNT_MODAL": {
+    "TITLE": "Désactiver votre compte",
+    "BODY": {
+      "TEXT1": "Toutes vos données seront anonymisé à l'exception des factures éditées.",
+      "TEXT2": "Cette action est iréversible."
+    },
+    "CANCEL_BUTTON": "Je préfère le garder",
+    "VALIDATE_BUTTON": "Désactiver"
+  }
+}

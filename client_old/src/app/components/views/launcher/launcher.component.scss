@@ -1,0 +1,103 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+main {
+  position: relative;
+
+  .links {
+    position: relative;
+
+    .controls {
+      @media(min-width: $tablet) {
+        width: 65%;
+      }
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      width: 90%;
+      justify-content: space-around;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  section {
+    @media(min-width: $tablet) {
+      margin-left: $space*5;
+      width: 30%;
+    }
+    @media(max-width: $laptop) and (min-width: $tablet) {
+      margin-left: $space*3;
+      width: 60%;
+    }
+    margin-left: $space;
+    width: 90%;
+
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: $space*1;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      @media(min-width: $tablet) {
+        font: $montserrat-48-medium;
+      }
+      @media(max-width: $laptop) and (min-width: $tablet) {
+        font: $montserrat-36-medium;
+      }
+      font: $montserrat-24-regular;
+      color: $secondary;
+
+    }
+
+    .warning {
+      @media(min-width: $tablet) {
+        font-size: 2.375rem;
+        width: 34px;
+        height: 34px;
+      }
+      @media(max-width: $laptop) and (min-width: $tablet) {
+        font-size: 2rem;
+        width: 30px;
+        height: 30px;
+      }
+      color: $secondary;
+      font-size: 1.5rem;
+      margin-left: $space*0.5;
+      width: 24px;
+      height: 24px;
+    }
+
+    ul {
+      li {
+        @media(min-width: $laptop) {
+          font: $montserrat-24-regular;
+        }
+
+        margin-bottom: $space*0.5;
+        font: $montserrat-16-regular;
+      }
+
+      .bold {
+        @media(min-width: $laptop) {
+          font: $montserrat-24-bold;
+        }
+        font: $montserrat-16-bold;
+      }
+    }
+
+    p {
+      @media(min-width: $laptop) {
+        font: $montserrat-16-regular;
+      }
+      margin-top: $space*1;
+      font: $montserrat-11-regular;
+    }
+  }
+
+}

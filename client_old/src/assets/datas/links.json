@@ -1,0 +1,111 @@
+{
+  "shop": [
+    {
+      "label": "HEADER.NAV.SHOP.TITLE",
+      "class": "title-li",
+      "href": "/"
+    },
+    {
+      "label": "HEADER.NAV.SHOP.SUBTITLE",
+      "class": "subtitle-li",
+      "href": "/"
+    },
+    {
+      "label": "HEADER.NAV.SHOP.MONEY",
+      "class": "body-li",
+      "href": "/shop",
+      "params": "money"
+    },
+    {
+      "label": "HEADER.NAV.SHOP.WANDS",
+      "class": "body-li",
+      "href": "/shop",
+      "params": "wands"
+    },
+    {
+      "label": "HEADER.NAV.SHOP.CLOTHES",
+      "class": "body-li",
+      "href": "/shop",
+      "params": "clothes"
+    },
+    {
+      "label": "HEADER.NAV.SHOP.IMPROVEMENTS",
+      "class": "body-li",
+      "href": "/shop",
+      "params": "improvements"
+    },
+    {
+      "label": "HEADER.NAV.SHOP.CONSUMABLES",
+      "class": "body-li",
+      "href": "/shop",
+      "params": "consumables"
+    },
+    {
+      "label": "HEADER.NAV.SHOP.PETS",
+      "class": "body-li",
+      "href": "/shop",
+      "params": "pets"
+    },
+    {
+      "label": "HEADER.NAV.SHOP.MOUNTS",
+      "class": "body-li",
+      "href": "/shop",
+      "params": "mounts"
+    }
+  ],
+  "game": [
+    {
+      "label": "HEADER.NAV.GAME.TITLE",
+      "class": "title-li",
+      "href": "/"
+    },
+    {
+      "label": "HEADER.NAV.GAME.SUBTITLE",
+      "class": "subtitle-li",
+      "href": "/"
+    },
+    {
+      "label": "HEADER.NAV.GAME.LAUNCHER",
+      "class": "body-li",
+      "href": "/wip"
+    },
+    {
+      "label": "HEADER.NAV.GAME.VOTE",
+      "class": "body-li",
+      "href": "/wip"
+    }
+  ],
+  "quibbler": [
+    {
+      "label": "HEADER.NAV.QUIBBLER.TITLE",
+      "class": "title-li",
+      "href": "/"
+    },
+    {
+      "label": "HEADER.NAV.QUIBBLER.SUBTITLE",
+      "class": "subtitle-li",
+      "href": "/"
+    },
+    {
+      "label": "HEADER.NAV.QUIBBLER.NEWS",
+      "class": "body-li",
+      "href": "/quibbler"
+    },
+    {
+      "label": "HEADER.NAV.QUIBBLER.WIKI",
+      "class": "body-li",
+      "href": "/wip"
+    },
+    {
+      "label": "HEADER.NAV.QUIBBLER.CGU",
+      "class": "body-li",
+      "href": "/terms-cgu"
+    },
+    {
+      "label": "HEADER.NAV.QUIBBLER.CGV",
+      "class": "body-li",
+      "href": "/terms-cgv"
+    }
+  ]
+}
+

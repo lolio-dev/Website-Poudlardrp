@@ -1,0 +1,15 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+<main *ngIf="loaded">
+  <div class='articles'>
+    <div *ngFor='let article of articles'>
+      <app-news [title]='article.title' [subtitle]='article.subtitle' [text]='article.text' [date]='article.date'
+                [image]='article.image'>
+      </app-news>
+    </div>
+  </div>
+</main>
+<app-footer *ngIf="loaded"></app-footer>

@@ -1,0 +1,80 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+article {
+  @media (min-width: $tablet) {
+    width: 404px;
+    height: 480px;
+  }
+  width: 292px;
+  height: 326px;
+  background-color: white;
+  margin: $space * 1.5 $space * 1.5;
+  transition: transform 500ms ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+
+  img {
+    width: 100%;
+    height: 32%;
+    object-fit: cover;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: $space * 1.2;
+    height: 57%;
+
+    h1, h2, p {
+      margin: 0;
+    }
+
+    h1 {
+      @media (min-width: $tablet) {
+        font: $montserrat-36-medium;
+      }
+      height: 13%;
+      font: $montserrat-24-regular;
+      margin-bottom: 3%;
+    }
+
+    h2 {
+      @media (min-width: $tablet) {
+        font: $montserrat-24-regular;
+      }
+      height: 10%;
+      font: $montserrat-16-regular;
+      color: $secondary;
+      margin-bottom: 5%;
+    }
+
+    p {
+      @media (min-width: $tablet) {
+        font: $montserrat-16-regular;
+      }
+      font: $montserrat-11-regular;
+    }
+
+    .text {
+      height: 58%;
+      margin-bottom: 2%;
+    }
+
+    .date {
+      height: 7%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $primary;
+
+      p {
+        margin-left: $space * 0.5;
+      }
+    }
+  }
+}

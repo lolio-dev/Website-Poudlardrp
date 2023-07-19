@@ -1,0 +1,36 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+<main *ngIf="loaded">
+  <div class='links'>
+    <app-banner [image]='banner.image' [alt]='banner.alt'></app-banner>
+    <div class='controls'>
+      <button custom-button *ngFor='let button of buttons' [label]='button.label' [ngClass]='buttonsClass'></button>
+    </div>
+  </div>
+  <section>
+    <div class='title'>
+      <h1>{{"LAUNCHER.TITLE" | translate }}</h1>
+      <mat-icon class='warning'>warning</mat-icon>
+    </div>
+    <ul>
+      <li><span class='bold'>{{"LAUNCHER.COMPONENTS.CPU" | translate }}</span>{{"LAUNCHER.VALUES.CPU" | translate }}
+      </li>
+
+      <li><span class='bold'>{{"LAUNCHER.COMPONENTS.RAM" | translate }}</span>{{"LAUNCHER.VALUES.RAM" | translate }}
+      </li>
+
+      <li><span
+        class='bold'>{{"LAUNCHER.COMPONENTS.STORAGE" | translate }}</span>{{"LAUNCHER.VALUES.STORAGE" | translate }}
+      </li>
+
+      <li><span class='bold'>{{"LAUNCHER.COMPONENTS.GPU" | translate }}</span>{{"LAUNCHER.VALUES.GPU" | translate }}
+      </li>
+    </ul>
+
+    <p>{{"LAUNCHER.LOW_CONFIGS" | translate }}</p>
+  </section>
+</main>
+<app-footer *ngIf="loaded"></app-footer>

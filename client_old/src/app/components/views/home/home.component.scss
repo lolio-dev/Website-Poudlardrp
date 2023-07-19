@@ -1,0 +1,80 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+main {
+  position: relative;
+
+  .headBanner {
+    position: relative;
+
+    .infos {
+      @media (min-width: $laptop) {
+        top: 55%;
+      }
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+
+      p {
+        @media (min-width: $laptop) {
+          font: $montserrat-36-medium;
+          margin: $space * 0.5 0;
+        }
+        font: $montserrat-24-regular;
+        color: $light;
+        margin: $space * 0.25 0;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+      }
+
+      .players {
+        display: flex;
+        align-items: center;
+
+        .circle {
+          @media (min-width: $laptop) {
+            height: 30px;
+            width: 30px;
+          }
+          height: 15px;
+          width: 15px;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          background-color: $green;
+          margin-right: $space;
+          border-radius: 50%;
+        }
+      }
+
+      .ip {
+        @media (min-width: $laptop) {
+          font: $federant-48-regular;
+        }
+        font: $federant-24-regular;
+      }
+    }
+  }
+
+  .content {
+    @media (min-width: $laptop) {
+      flex-direction: row;
+      margin: $space * 6 $space *6;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font: $montserrat-36-medium;
+      text-align: center;
+    }
+  }
+}

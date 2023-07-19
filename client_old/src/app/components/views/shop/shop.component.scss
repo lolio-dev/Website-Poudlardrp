@@ -1,0 +1,97 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+main {
+  @media (min-width: $tablet) {
+    margin-top: $space * 8;
+  }
+  position: relative;
+  margin-top: $space * 6;
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 12%;
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: $space;
+    }
+
+    .slider {
+      margin-top: 3em;
+
+      .value {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        color: $secondary;
+        padding-left: 1mm;
+        margin-left: 1.5em;
+        font: $montserrat-24-bold;
+        width: 100px;
+        height: 30px;
+        border: 2px solid $secondary;
+        border-radius: 5px;
+
+        P {
+          margin: 0 1mm 0 1mm;
+        }
+      }
+
+      .range {
+        -webkit-appearance: none;
+        margin-top: $space * 2;
+        background-color: transparent;
+        position: relative;
+        width: 235px;
+        outline: none;
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          border: 3px solid $secondary;
+          height: 27px;
+          width: 27px;
+          border-radius: 50%;
+          background: $light;
+          cursor: pointer;
+          margin-top: -12px;
+        }
+
+        &::-moz-range-thumb {
+          -webkit-appearance: none;
+          border: 3px solid $secondary;
+          height: 27px;
+          width: 27px;
+          border-radius: 50%;
+          background: $light;
+          background-color: $light;
+          cursor: pointer;
+          margin-top: -12px;
+        }
+
+        &::-webkit-slider-runnable-track {
+          background: $secondary;
+          height: 4px;
+        }
+
+        &::-moz-range-track {
+          background: $secondary;
+          height: 4px;
+        }
+      }
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $space;
+  }
+}

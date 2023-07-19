@@ -1,0 +1,13 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font: $montserrat-36-medium;
+  }
+}

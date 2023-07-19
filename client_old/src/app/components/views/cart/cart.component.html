@@ -1,0 +1,96 @@
+<div *ngIf="!loaded">
+    <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+<main *ngIf="loaded">
+    <div class="page">
+        <!-- Ensemble des éléments de la page -->
+        <h1 *ngIf="cart?.carts!.length">Panier</h1>
+
+        <div class="cart" *ngIf="cart?.carts!.length">
+            <!-- résumé + paiement -->
+            <div class="resume">
+                <!-- résumé -->
+                <div *ngFor="let order of cart!.carts" class="product">
+                    <!-- 1 produit -->
+                    <a routerLink='/product/{{ order.product.productId }}'><img src="{{ order.product.image }}"
+                            alt=""></a>
+                    <div class="infos">
+                        <!-- tout à droite de l'image -->
+                        <div class="description">
+                            <!-- nom + desc + prix -->
+                            <div class="nomDesc">
+                                <h2>{{ order.product.title }}</h2>
+                                <p class="description">{{ order.product.description }}</p>
+                            </div>
+                            <div class="price">
+                                <p>{{ order.product.price}}</p>
+                                <svg style='width:28px;height:28px' viewBox='0 0 24 24'>
+                                    <path fill='currentColor'
+                                        d='M12 2C6.47 2 2 6.5 2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4S20 7.58 20 12C20 16.42 16.42 20 12 20M8 14L7 8L10 10L12 7L14 10L17 8L16 14H8M8.56 16C8.22 16 8 15.78 8 15.44V15H16V15.44C16 15.78 15.78 16 15.44 16H8.56Z' />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div custom-number class='product__counter counter counter--mix'
+                                (valueChanges)='updateQuantity($event, order.cartId)' [counterValue]='order.quantity'>
+                            </div>
+                            <mat-icon (click)='handleDeleteCart(order.cartId)' class="delete_outline">clear</mat-icon>
+                        </div>
+                        <hr>
+                        <div class="totalPrice">
+                            <p class="price">{{ order.quantity * order.product.price }}</p>
+                            <svg style='width:28px;height:28px' viewBox='0 0 24 24'>
+                                <path fill='currentColor'
+                                    d='M12 2C6.47 2 2 6.5 2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4S20 7.58 20 12C20 16.42 16.42 20 12 20M8 14L7 8L10 10L12 7L14 10L17 8L16 14H8M8.56 16C8.22 16 8 15.78 8 15.44V15H16V15.44C16 15.78 15.78 16 15.44 16H8.56Z' />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payement">
+                <!-- paiement -->
+                <div class="total">
+                    <h2>Total :</h2>
+                    <p> {{ totalPrice }}</p>
+                    <svg style='width:28px;height:28px' viewBox='0 0 24 24'>
+                        <path fill='currentColor'
+                            d='M12 2C6.47 2 2 6.5 2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4S20 7.58 20 12C20 16.42 16.42 20 12 20M8 14L7 8L10 10L12 7L14 10L17 8L16 14H8M8.56 16C8.22 16 8 15.78 8 15.44V15H16V15.44C16 15.78 15.78 16 15.44 16H8.56Z' />
+                    </svg>
+                </div>
+
+                <!--<app-input id="promo" [style]="codePromo" [type]="'code-promo'" [placeholder]="'Code-promo'" [required]='true'></app-input>-->
+                <button custom-button [ngClass]='primaryButtonClass'
+                    [attr.disabled]="(!this.user || this.user!.gems < this.totalPrice!) ? true : null"
+                    [label]="'Acheter'" (click)="openModal('confirm-modal')"></button>
+            </div>
+        </div>
+        <div class="empty-cart" *ngIf="!cart?.carts!.length">
+            <p class="empty-cart__text">Votre panier est vide</p>
+            <img class="empty-cart__image" src="./assets/images/empty-cart.png" alt="empty cart gif">
+            <a class="empty-cart__cta" routerLink='/shop' [queryParams]="{'category': 'money'}">
+                <button custom-button [ngClass]="secondaryButtonClass" label="Revenir à traverse"></button>
+            </a>
+        </div>
+    </div>
+
+    <app-modal id='confirm-modal'>
+        <h1 header>Valider le paiement</h1>
+        <div body>
+            <div class="price">
+                <p> {{ totalPrice }}</p>
+                <svg style='width:28px;height:28px' viewBox='0 0 24 24'>
+                    <path fill='currentColor'
+                        d='M12 2C6.47 2 2 6.5 2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4S20 7.58 20 12C20 16.42 16.42 20 12 20M8 14L7 8L10 10L12 7L14 10L17 8L16 14H8M8.56 16C8.22 16 8 15.78 8 15.44V15H16V15.44C16 15.78 15.78 16 15.44 16H8.56Z' />
+                </svg>
+            </div>
+        </div>
+        <div footer>
+            <button custom-button class="btn-cancel" [ngClass]='primaryButtonClass' label='Annuler'
+                (click)="closeModal('confirm-modal')"></button>
+            <button custom-button [ngClass]='primaryButtonClass' label='Valider' (click)="paidUserCart()"></button>
+        </div>
+    </app-modal>
+</main>
+<app-footer *ngIf="loaded"></app-footer>

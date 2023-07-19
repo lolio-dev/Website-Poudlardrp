@@ -1,0 +1,16 @@
+{
+  "EMPTY_CART": {
+    "MESSAGE": "Votre panier est vide",
+    "BACK_TO_SHOP_BUTTON": "Revenir à traverse"
+  },
+  "CART": {
+    "TITLE": "Panier",
+    "TOTAL_LABEL": "Total",
+    "BUY_BUTTON": "Acheter"
+  },
+  "MODAL_PAYMENT": {
+    "TITLE": "Valider le paiement",
+    "CANCEL_BUTTON": "Annuler",
+    "VALIDATE_BUTTON": "Valider"
+  }
+}

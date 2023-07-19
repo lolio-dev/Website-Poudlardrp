@@ -1,0 +1,26 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+main {
+  @media (min-width: $tablet) {
+    margin-top: $space * 8;
+  }
+  position: relative;
+  margin-top: $space * 6;
+
+  .offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $space;
+  }
+}
+
+.info {
+  font: $montserrat-24-medium;
+}
+
+.paypal-btn {
+  margin-bottom: $space;
+}

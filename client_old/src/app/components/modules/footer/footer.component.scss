@@ -1,0 +1,58 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+footer {
+  @media(min-width: $laptop) {
+    height: 5.75em;
+    margin-top: $space *5;
+  }
+
+  position: relative;
+  background-color: $dark;
+  width: 100%;
+  height: 4.5em;
+  margin-top: $space *3;
+  z-index: 20;
+
+  div {
+    margin: 0 2em;
+    height: 100%;
+
+    .icons {
+      display: flex;
+      height: 100%;
+
+      .icon {
+        margin: auto;
+        transition: all 500ms ease;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+
+      .youtube {
+        @media(min-width: $laptop) {
+          width: 2.5em;
+        }
+        width: 1.5em;
+      }
+
+      .twitter {
+        @media(min-width: $laptop) {
+          width: 2.5em;
+        }
+        width: 1.5em;
+      }
+
+      .discord {
+        @media(min-width: $laptop) {
+          width: 2.5em;
+        }
+        width: 1.5em;
+      }
+    }
+  }
+}

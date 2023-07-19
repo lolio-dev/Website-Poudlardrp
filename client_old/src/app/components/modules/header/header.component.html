@@ -1,0 +1,127 @@
+<header>
+  <nav class='laptop-nav'>
+    <a class='logo' routerLink='/'>
+      <app-logo [size]='logoSize'></app-logo>
+    </a>
+    <div class='elements'>
+      <div class='links'>
+        <ul>
+          <li class='link'>
+            <button (click)='toggleLinks($event)'>{{shopLinks[0].label | translate}}
+              <mat-icon class='arrow'>keyboard_arrow_down</mat-icon>
+            </button>
+            <ul>
+              <li *ngFor='let link of laptopShopLinks' [class]='link.class'>
+                <a routerLink={{link.href}} [queryParams]="{category: link.params}">{{link.label | translate}}</a>
+              </li>
+            </ul>
+          </li>
+          <li class='link'>
+            <button (click)='toggleLinks($event)'>{{gameLinks[0].label | translate}}
+              <mat-icon class='arrow'>keyboard_arrow_down</mat-icon>
+            </button>
+            <ul>
+              <li *ngFor='let link of laptopGameLinks' [class]='link.class'>
+                <a routerLink='{{link.href}}'>{{link.label | translate}}</a>
+              </li>
+            </ul>
+          </li>
+          <li class='link'>
+            <button (click)='toggleLinks($event)'>{{quibblerLinks[0].label | translate}}
+              <mat-icon class='arrow'>keyboard_arrow_down</mat-icon>
+            </button>
+            <ul>
+              <li *ngFor='let link of laptopQuibblerLinks' [class]='link.class'>
+                <a routerLink='{{link.href}}'>{{link.label | translate}}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class='connexion'>
+        <button *ngIf='!user' (click)="openModal('login-modal')">Se Connecter</button>
+        <div *ngIf='user' class="links">
+          <ul>
+            <li class="link">
+              <button class="profil" (click)='toggleLinks($event)'>{{user.userName}}
+                <mat-icon class='arrow'>keyboard_arrow_down</mat-icon>
+              </button>
+              <ul>
+                <li class="body-li">
+                  <a routerLink='/profile'>Profil</a>
+                </li>
+                <li class="body-li">
+                  <a routerLink='/transactions'>Factures</a>
+                </li>
+                <li class="body-li">
+                  <a routerLink='/' (click)="logout()">Déconnexion</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <span *ngIf='user' class='gems'>
+                    <a routerLink='/gems'>
+                        {{ userGems }}
+                      <svg style='width:24px;height:24px' viewBox='0 0 24 24'>
+                            <path fill='currentColor'
+                                  d='M12 2C6.47 2 2 6.5 2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4S20 7.58 20 12C20 16.42 16.42 20 12 20M8 14L7 8L10 10L12 7L14 10L17 8L16 14H8M8.56 16C8.22 16 8 15.78 8 15.44V15H16V15.44C16 15.78 15.78 16 15.44 16H8.56Z' />
+                        </svg>
+                    </a>
+                </span>
+        <a *ngIf='user' class='cart' routerLink='/cart'>
+          <mat-icon *ngIf='user'>shopping_cart</mat-icon>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <nav class='mobile-nav'>
+    <div class='topbar'>
+      <mat-icon (click)='toggleMenu($event)'>reorder</mat-icon>
+      <div class='connexion'>
+        <button *ngIf='!user' (click)="openModal('login-modal')">Se Connecter</button>
+        <span *ngIf='user' class='gems'>
+                    <a routerLink='/gems'>
+                        {{ userGems }}
+                      <svg width='24' height='24' viewBox='0 0 24 24'>
+                            <path fill='currentColor'
+                                  d='M12 2C6.47 2 2 6.5 2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4S20 7.58 20 12C20 16.42 16.42 20 12 20M8 14L7 8L10 10L12 7L14 10L17 8L16 14H8M8.56 16C8.22 16 8 15.78 8 15.44V15H16V15.44C16 15.78 15.78 16 15.44 16H8.56Z' />
+                        </svg>
+                    </a>
+                </span>
+        <a *ngIf='user' class='cart' routerLink='/cart'>
+          <mat-icon *ngIf='user'>shopping_cart</mat-icon>
+        </a>
+      </div>
+    </div>
+    <div class='elements {{isNavOpened}}'>
+      <div class='links'>
+        <ul>
+          <li class='body-li'><a routerLink='/'>Retourner à l'accueil</a></li>
+        </ul>
+        <ul *ngIf='user'>
+          <li class='title-li'><a routerLink='/'>{{user.userName}}</a></li>
+          <li class='body-li'><a routerLink='/profile'>Profil</a></li>
+          <li class='body-li'><a routerLink='/transactions'>Factures</a></li>
+          <li class='body-li'><a routerLink='/' (click)="logout()">Déconnexion</a></li>
+        </ul>
+          <ul>
+          <li *ngFor='let link of shopLinks' [class]='link.class'>
+            <a routerLink={{link.href}} [queryParams]="{category: link.params}">{{link.label | translate}}</a>
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor='let link of gameLinks' [class]='link.class'>
+            <a routerLink='{{link.href}}'>{{link.label | translate}}</a>
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor='let link of quibblerLinks' [class]='link.class'>
+            <a routerLink='{{link.href}}'>{{link.label | translate}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='background-{{isNavOpened}}'></div>
+  </nav>
+</header>

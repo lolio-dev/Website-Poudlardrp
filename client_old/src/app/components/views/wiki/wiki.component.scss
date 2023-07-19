@@ -1,0 +1,12 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+
+main {
+  height: 100%;
+
+  p {
+    font: $montserrat-36-medium;
+    margin-top: $space * 5;
+    text-align: center;
+  }
+}

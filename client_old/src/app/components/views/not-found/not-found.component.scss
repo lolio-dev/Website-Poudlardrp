@@ -1,0 +1,39 @@
+@import '/src/styles/fonts';
+@import '/src/styles/colors';
+@import '/src/styles/vars';
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    img {
+      @media(min-width: $tablet) {
+        width: 100%;
+      }
+      width: 75%;
+    }
+
+    h1 {
+      @media(min-width: $tablet) {
+        font: $montserrat-24-regular;
+      }
+      width: 15em;
+      margin-top: $space * 3;
+      font: $montserrat-16-regular;
+      color: $primary;
+      text-align: center;
+    }
+
+    .back {
+      margin-top: $space * 2.5;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+
+main {
+  @media (min-width: $tablet) {
+    margin-top: $space * 10;
+  }
+  position: relative;
+  margin-top: $space * 6;
+
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

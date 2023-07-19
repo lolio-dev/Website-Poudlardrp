@@ -1,0 +1,58 @@
+{
+  "START_AT": "Applicables à compter du 29/01/2022",
+  "SCOPE": {
+    "TITLE": "Clause n° 1 : Objet et champ d'application",
+    "PARAGRAPH": "Les présentes conditions générales de vente (CGV) constituent le socle de la négociation commerciale et sont systématiquement adressées ou remises à chaque acheteur pour lui permettre de passer commande.",
+    "PARAGRAPH2": {
+      "SENTENCE": "Les conditions générales de vente décrites ci-après détaillent les droits et obligations de l'association Wizard Universe et de son client dans le cadre de la vente des marchandises suivantes :",
+      "LIST": "Packs de gemmes"
+    },
+    "PARAGRAPH3": "Toute acceptation du devis/bon de commande en ce compris la clause « Je reconnais avoir pris connaissance et j'accepte les conditions générales de vente ci-annexées » implique l'adhésion sans réserve de l'acheteur aux présentes conditions générales de vente."
+  },
+  "PRICES": {
+    "TITLE": "Clause n° 2 : Prix",
+    "PARAGRAPH": "Les prix des marchandises vendues sont ceux en vigueur au jour de la prise de commande. Ils sont libellés en euros et calculés hors taxes. Par voie de conséquence, ils seront majorés du taux de TVA et des frais de transport applicables au jour de la commande.",
+    "PARAGRAPH2": "L' association Wizard Universe s'accorde le droit de modifier ses tarifs à tout moment. Toutefois, elle s'engage à facturer les marchandises commandées aux prix indiqués lors de l'enregistrement de la commande."
+  },
+  "REBATES": {
+    "TITLE": "Clause n° 3 : Rabais et ristournes",
+    "PARAGRAH": "Les tarifs proposés comprennent les rabais et ristournes que l' association Wizard Universe serait amenée à octroyer compte tenu de ses résultats ou de la prise en charge par l'acheteur de certaines prestations."
+  },
+  "DISCOUNT": {
+    "TITLE": "Clause n° 4 : Escompte",
+    "PARAGRAPH": "Aucun escompte ne sera consenti en cas de paiement anticipé."
+  },
+  "TERMS": {
+    "TITLE": "Clause n° 5 : Modalités de paiement",
+    "PARAGRAH": "Le règlement des commandes s'effectue :",
+    "LIST": {
+      "ITEM": "Soit par paypal",
+      "ITEM2": "Soit par stripe"
+    }
+  },
+  "ESTATE": {
+    "TITLE": "Clause n° 6 : Clause de réserve de propriété",
+    "PARAGRAPH": "L' association Wizard Universe conserve la propriété des biens vendus jusqu'au paiement intégral du prix, en principal et en accessoires. À ce titre, si l'acheteur fait l'objet d'un redressement ou d'une liquidation judiciaire, l' association Wizard Universe se réserve le droit de revendiquer, dans le cadre de la procédure collective, les marchandises vendues et restées impayées."
+  },
+  "DELIVERY": {
+    "TITLE": "Clause n° 7 : Livraison",
+    "PARAGRAPH": "La livraison est effectuée :",
+    "LIST": "Instantanément après paiement",
+    "PARAGRAPH2": "Par voie de conséquence, tout retard raisonnable dans la livraison des produits ne pourra pas donner lieu au profit de l'acheteur à :",
+    "LIST2": {
+      "ITEM": "l'allocation de dommages et intérêts",
+      "ITEM2": "l'annulation de la commande"
+    },
+    "PARAGRAPH3": "Le risque de transfert est supporté en totalité par l'acheteur."
+  },
+  "FORCE_MAJEURE": {
+    "TITLE": "Clause n° 10 : Force majeure",
+    "PARAGRAPH": "La responsabilité de l' association Wizard Universe ne pourra pas être mise en oeuvre si la non-exécution ou le retard dans l'exécution de l'une de ses obligations décrites dans les présentes conditions générales de vente découle d'un cas de force majeure. À ce titre, la force majeure s'entend de tout événement extérieur, imprévisible et irrésistible au sens de l'article 1148 du Code civil."
+  },
+  "COURT": {
+    "TITLE": "Clause n° 11 : Tribunal compétent",
+    "PARAGRAPH": "Tout litige relatif à l'interprétation et à l'exécution des présentes conditions générales de vente est soumis au droit français.",
+    "PARAGRAPH2": "À défaut de résolution amiable, le litige sera porté devant le Tribunal de commerce de Saint-Gély-du-Fesc."
+  },
+  "SIGN": "Fait à Saint-Gély-du-Fesc, le 29/01/2022"
+}

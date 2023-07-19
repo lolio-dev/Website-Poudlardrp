@@ -1,0 +1,42 @@
+@import '/src/styles/vars';
+
+.mini {
+  width: 75px;
+}
+
+.small {
+  @media(max-width: $laptop) and (min-width: $tablet) {
+    width: 20%;
+  }
+  height: auto;
+  width: 15%;
+  min-width: 50px;
+}
+
+.medium {
+  height: auto;
+  width: 150px;
+}
+
+.large {
+  height: auto;
+  width: 300px;
+}
+
+.large.pulsing {
+  animation: 2s large-pulse infinite ease-in-out  ;
+}
+
+@keyframes large-pulse {
+  0% {
+    width: 300px;
+  }
+
+  50% {
+    width: 275px;
+  }
+
+  100% {
+    width: 300px;
+  }
+}

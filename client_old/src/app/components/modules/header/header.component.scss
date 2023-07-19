@@ -1,0 +1,322 @@
+@import '/src/styles/fonts';
+@import '/src/styles/colors';
+@import '/src/styles/vars';
+
+header {
+  @media (min-width: $laptop) {
+    height: 95px;
+  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  background-color: $primary;
+  box-shadow: $header-shadow;
+  z-index: 10;
+
+  nav {
+    @media (min-width: $laptop) {
+      width: 80%;
+    }
+    width: auto;
+    height: 100%;
+    margin: auto;
+    padding: 0 $space * 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .laptop-nav .elements, .topbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .laptop-nav {
+    @media (min-width: $laptop) {
+      display: flex;
+    }
+
+    display: none;
+
+    .elements {
+      padding-left: $space * 2;
+
+      .links ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        .profil {
+          margin: 0;
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          background-color: transparent;
+          border: none;
+          color: $light;
+          font: $montserrat-24-regular;
+          margin-right: $space * 2;
+          outline: none;
+
+          .arrow {
+            padding-left: $space * 0.2;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        ul {
+          display: none;
+          align-items: baseline;
+          width: 240px;
+          position: absolute;
+          top: $space * 5;
+          background-color: white;
+          flex-direction: column;
+          border-radius: 5px;
+          box-shadow: $header-shadow;
+          text-align: left;
+          padding: $space * 0.7 0;
+
+          .subtitle-li {
+            padding-top: $space * 0.5;
+            padding-bottom: $space;
+            width: 86%;
+            border-bottom: 1px solid $dark;
+            margin: 0 7% $space;
+
+            a {
+              display: block;
+              color: $black;
+              font: $montserrat-16-bold;
+              text-decoration: none;
+            }
+          }
+
+          .body-li {
+            width: 100%;
+
+            a {
+              display: block;
+              padding: $space * 0.5 7%;
+              width: 86%;
+              color: $black;
+              font: $montserrat-16-regular;
+              text-decoration: none;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: $light-grey;
+
+              a {
+                font: $montserrat-16-bold;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .mobile-nav {
+    @media (min-width: $laptop) {
+      display: none;
+    }
+
+    display: flex;
+
+    mat-icon {
+      color: $light;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .elements {
+      position: fixed;
+      left: 0;
+      top: 56px;
+      background-color: $dark;
+      height: 100%;
+      animation: 250ms slidein linear forwards;
+      display: flex;
+      flex-direction: column;
+      box-shadow: $drawer-shadow;
+
+      ::-webkit-scrollbar {
+        width: 0;
+      }
+
+      .links {
+        height: 83%;
+        overflow-y: scroll;
+        white-space: nowrap;
+
+        ul {
+          color: $light;
+          list-style-type: none;
+          padding: 0 $space * 2;
+          margin: $space * 1.5 0;
+
+
+          a {
+            color: $light;
+            text-decoration: none;
+          }
+
+          .title-li {
+            font: $montserrat-24-regular;
+            margin-bottom: $space * 0.5;
+          }
+
+          .subtitle-li {
+            font: $montserrat-16-regular;
+            padding-bottom: $space * 0.5;
+            border-bottom: 1px solid $light;
+            margin-bottom: $space;
+
+            a {
+              color: $grey;
+            }
+          }
+
+          .body-li {
+            font: $montserrat-16-regular;
+            margin-bottom: $space * 0.25;
+          }
+        }
+      }
+    }
+
+    .closed {
+      display: none;
+
+    }
+
+    .closing {
+      animation: 250ms slideout linear forwards;
+    }
+
+    .background-open {
+      position: fixed;
+      top: 55px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: black;
+      opacity: 0.3;
+      z-index: -1;
+    }
+  }
+}
+
+.connexion {
+  display: flex;
+  align-items: center;
+
+  button {
+    @media (min-width: $laptop) {
+      font: $montserrat-16-regular;
+      padding: $space * 0.5 $space * 1.5;
+      min-width: 160px;
+    }
+    background: transparent;
+    border: 1px solid $light;
+    color: $light;
+    font: $montserrat-11-regular;
+    padding: $space * 0.5 $space;
+    min-width: 100px;
+    transition: all 500ms ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+
+  .gems a {
+    @media (max-width: $laptop) {
+      font: $montserrat-16-regular;
+    }
+
+    cursor: pointer;
+    padding: 1em * 0.5;
+    border-radius: 10px;
+    border: $light 1px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: auto;
+
+    color: $light;
+    font: $montserrat-24-regular;
+    margin-left: 24px;
+
+
+    svg {
+      margin-left: 5px;
+    }
+  }
+
+  a {
+    @media (min-width: $laptop) {
+      font: $montserrat-24-regular;
+    }
+    color: $light;
+    font: $montserrat-16-regular;
+    text-decoration: none;
+  }
+
+  .cart {
+    @media (min-width: $laptop) {
+      height: 24px;
+    }
+    height: 18px;
+    margin-left: 1em;
+
+    mat-icon {
+      @media (min-width: $laptop) {
+        font-size: 24px;
+      }
+      font-size: 18px;
+    }
+  }
+}
+
+
+@keyframes slidein {
+  from {
+    display: block;
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    width: 85%;
+  }
+
+  to {
+    width: 0;
+    display: none;
+  }
+}

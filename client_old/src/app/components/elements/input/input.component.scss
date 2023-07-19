@@ -1,0 +1,40 @@
+@import '/src/styles/fonts';
+@import '/src/styles/colors';
+@import '/src/styles/vars';
+
+input {
+  @media (min-width: $laptop) {
+    font: $montserrat-24-regular;
+  }
+  border: none;
+  border-bottom: 2px solid $grey;
+  font: $montserrat-16-regular;
+  margin: $space * 0.5 0 $space;
+  padding: $space * 0.25 $space;
+  outline: none;
+  color: $black;
+  background-color: $white;
+  width: 300px;
+  max-width: 100%;
+
+  &::placeholder {
+    color: $grey;
+  }
+
+  &:focus {
+    border-color: $secondary;
+  }
+}
+
+.disabled {
+  color: $grey-dark;
+}
+
+input:not(:placeholder-shown) + label::before {
+  position: absolute;
+  content: attr(for) "*";
+  left: 0;
+  top: -5px;
+  font: $montserrat-11-regular;
+  color: $secondary;
+}

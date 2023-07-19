@@ -1,0 +1,10 @@
+{
+  "PRODUCT": {
+    "ADD_TO_BASKET_BUTTON": "Ajouter au panier"
+  },
+  "VALIDATION_LABEL": "Element ajouté au panier",
+  "ERROR_MESSAGE": "Une erreur s'est produite",
+  "SIMILAR_PRODUCT": {
+    "TITLE": "Produits Similaires"
+  }
+}

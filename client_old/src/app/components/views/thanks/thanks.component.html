@@ -1,0 +1,19 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+
+<main *ngIf="loaded">
+  <div class="container">
+    <img src='../../../../assets/images/dance.gif' alt=''>
+    <div class="block"></div>
+  </div>
+  <h1>Merci</h1>
+  <p>Votre commande a été prise en compte</p>
+  <a routerLink='/'>
+    <button custom-button [ngClass]='goBackBtnClass' class='back' [label]='label'></button>
+  </a>
+</main>
+
+<app-footer *ngIf="loaded"></app-footer>

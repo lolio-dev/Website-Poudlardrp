@@ -1,0 +1,11 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+
+<main *ngIf="loaded">
+  <h1>Page en cours de développement...</h1>
+</main>
+
+<app-footer *ngIf="loaded"></app-footer>

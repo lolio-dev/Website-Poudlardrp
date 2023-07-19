@@ -1,0 +1,9 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+<main *ngIf="loaded">
+  <p>Wiki works!</p>
+</main>
+<app-footer *ngIf="loaded"></app-footer>

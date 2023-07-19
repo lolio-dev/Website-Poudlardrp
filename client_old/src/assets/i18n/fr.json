@@ -1,0 +1,55 @@
+{
+  "NOT_FOUND": {
+    "BACK": "Revenir sur vos pas",
+    "MESSAGE": "Mince ! Vous vous êtes perdus dans l’Allée des Embrumes"
+  },
+  "HEADER": {
+    "NAV": {
+      "SHOP": {
+        "TITLE": "Traverse",
+        "SUBTITLE": "Achetez... Prospérez !",
+        "MONEY": "Gringotts",
+        "WANDS": "Ollivanders",
+        "CLOTHES": "Guipure",
+        "IMPROVEMENTS": "Fleury et Bott",
+        "CONSUMABLES": "Apothicaire",
+        "PETS": "Eeylops",
+        "MOUNTS": "Écurie Magique"
+      },
+      "GAME": {
+        "TITLE": "Jouer",
+        "SUBTITLE": "Devenez un sorcier",
+        "LAUNCHER": "Launcher",
+        "VOTE": "Vote"
+      },
+      "QUIBBLER": {
+        "TITLE": "Chicaneur",
+        "SUBTITLE": "Quoi de neuf ?",
+        "NEWS": "Actualités",
+        "WIKI": "Glossaire",
+        "CGU": "Conditions d'utilisation",
+        "CGV": "Conditions de ventes"
+      }
+    }
+  },
+  "LAUNCHER": {
+    "TITLE": "Configuration",
+    "COMPONENTS": {
+      "CPU": "CPU : ",
+      "RAM": "RAM : ",
+      "STORAGE": "Stockage : ",
+      "GPU": "Carte graphique : "
+    },
+    "VALUES": {
+      "CPU": "Intel Core",
+      "RAM": "0Go",
+      "STORAGE": "0Go",
+      "GPU": "RTX"
+    },
+    "LOW_CONFIGS": "* Pour les petites configs, vous avez la possibilité d’utiliser une version moins gourmande du texture packs (x32)"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Tous droits réservés - Copyright - Poudlard RP",
+    "CGU": "CGU"
+  }
+}

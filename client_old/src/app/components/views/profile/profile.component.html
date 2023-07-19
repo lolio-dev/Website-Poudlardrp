@@ -1,0 +1,88 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+<main *ngIf='loaded && user'>
+  <section class='herobanner'>
+    <img class='user-photo' src='{{ photo }}' alt='Lockart'>
+    <div class='herobanner__content'>
+      <p class='user-identity'>{{ user.userName }} - LVL 00</p>
+      <div class='user-informations'>UUID:
+      {{user.uuid}}</div>
+    </div>
+  </section>
+  <section class='settings card'>
+    <div class="settings__header">
+      <h1 class='settings__title card__title'>Information du profil</h1>
+      <div *ngIf="!isInModification" class="settings__actions">
+        <button custom-button class='btn settings__icon-btn btn--medium btn--validation--default--rounded' (click)="edit()" label=""><mat-icon class="settings__icon">mode_edit</mat-icon></button>
+      </div>
+      <div *ngIf="isInModification" class="settings__actions">
+        <button custom-button class='btn settings__icon-btn btn--medium btn--validation--default--rounded' form="change-settings" label=""><mat-icon class="settings__icon">done</mat-icon></button>
+        <button custom-button class='btn settings__icon-btn btn--medium btn--danger--default--rounded' (click)="cancel()" label=""><mat-icon class="settings__icon">close</mat-icon></button>
+      </div>
+    </div>
+
+    <div class='settings__sections'>
+      <form id="change-settings" (submit)="apply($event)">
+        <div class='settings__section'>
+          <div class='section__header'>
+            <mat-icon class='section__icon'>person</mat-icon>
+            <h3 class='section__title'>Identité</h3>
+          </div>
+          <div class='section__inputs'>
+            <app-input type='text' placeholder='Pseudo' [required]='true' id="nickname" [isDisabled]="!isInModification"
+              [value]="user.userName"></app-input>
+            <app-input placeholder='Prenom' [required]='true' id="firstName" [isDisabled]="!isInModification"
+              [value]="user.firstName"></app-input>
+            <app-input class='disabled-input' placeholder='Nom' [required]='true' id="lastName"
+              [isDisabled]="!isInModification" [value]="user.lastName"></app-input>
+          </div>
+        </div>
+        <div class='settings__section'>
+          <div class='section__header'>
+            <mat-icon class='section__icon'>home</mat-icon>
+            <h3 class='section__title'>Localisation</h3>
+          </div>
+          <div class='section__inputs'>
+            <app-input placeholder='Adresse' [required]='true' id="firstAddress"
+              [isDisabled]="!isInModification" [value]="user.address1"></app-input>
+            <app-input placeholder='Complément' id="secondAddress" *ngIf="user.address1"
+              [isDisabled]="!isInModification" [value]="user.address2"></app-input>
+            <app-input placeholder='Code postal' [required]='true' id="postalCode" [isDisabled]="!isInModification"
+              [value]="user.postalCode"></app-input>
+          </div>
+        </div>
+        <div class='settings__section'>
+          <div class='section__header'>
+            <mat-icon class='section__icon'>key</mat-icon>
+            <h3 class='section__title'>Confidentiel</h3>
+          </div>
+          <div class='section__inputs'>
+            <app-input [type]="'email'" placeholder='Adresse mail' [required]='true' id="email"
+              [isDisabled]="!isInModification" [value]="user.email"></app-input>
+          </div>
+          <button class='change-password-btn btn btn--medium btn--dark--default--rounded'
+            (click)='openModal("change-password-modal", $event)'>
+            Changer le mot de passe
+          </button>
+          <button class='download-data-btn btn btn--medium btn--dark--default--rounded'
+                  (click)='getUserDatas()'>
+            <mat-icon class="transaction__icon">cloud_download</mat-icon>
+            Télécharger mes données
+          </button>
+        </div>
+        <div class='settings__section'>
+          <div class="section__header">
+            <mat-icon class='section__icon'>warning</mat-icon>
+            <h3 class="section__title">Danger zone</h3>
+          </div>
+          <button custom-button class='btn btn--medium btn--danger--default--rounded'
+            (click)='openModal("archive-account-validation-modal", $event)' label="Désactiver mon compte"></button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<app-footer *ngIf="loaded"></app-footer>

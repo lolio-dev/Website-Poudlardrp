@@ -1,0 +1,12 @@
+<div class='app-modal'>
+  <div class='app-modal-header'>
+    <ng-content select='[header]'></ng-content>
+  </div>
+  <div class='app-modal-body' *ngIf="showBody">
+    <ng-content select='[body]'></ng-content>
+  </div>
+  <div class='app-modal-footer'>
+    <ng-content select='[footer]'></ng-content>
+  </div>
+</div>
+<div class='app-modal-background'></div>

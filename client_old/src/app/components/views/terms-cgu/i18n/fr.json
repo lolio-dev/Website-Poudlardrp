@@ -1,0 +1,266 @@
+{
+  "SITE_LINK": " https://poudlardrp.fr ",
+  "LEGYA": "Lucien Lukes – legya@poudlardrp.fr",
+  "DEFINITIONS": {
+    "TITLE": "Définitions",
+    "CLIENT": {
+      "KEY": "Clients : ",
+      "VALUE": "tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales."
+    },
+    "SERVICES": {
+      "KEY": "Prestations et Services :",
+      "VALUE": "met à disposition des clients :"
+    },
+    "CONTENT": {
+      "KEY": "Contenu :",
+      "VALUE": "Ensemble des éléments constituants l’information présente sur le Site, notamment textes – images – vidéos."
+    },
+    "INFORMATIONS": {
+      "KEY": "Informations clients :",
+      "VALUE": "Ci après dénommé « Information (s) » qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par",
+      "VALUE2": "pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyses et de statistiques."
+    },
+    "USERS": {
+      "KEY": "Utilisateur :",
+      "VALUE": "Internaute se connectant, utilisant le site susnommé."
+    },
+    "PERSONALS": {
+      "KEY": "Informations personnelles :",
+      "VALUE": " « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978)."
+    },
+    "TERMS": {
+      "VALUE": "Les termes « données à caractère personnel », « personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679)"
+    }
+  },
+  "PRESENTATION": {
+    "TITLE": "1. Présentation du site internet.",
+    "DESCRITPION": "En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet",
+    "DESCRIPTION2": "l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:",
+    "OWNER": {
+      "KEY": "Propriétaire :",
+      "VALUE": "Association loi 1901 Wizard Universe Capital social de 0€ – 154 rue de la Croix de Tricoux 34980 Saint-Gély-du-Fesc"
+    },
+    "RESPONSIBLE": {
+      "KEY": "Responsable publication :",
+      "DESCRIPTION": "Le responsable publication est une personne physique ou une personne morale."
+    },
+    "HOST": {
+      "KEY": "Hébergeur",
+      "VALUE": "ovh – 2 rue Kellermann 59100 Roubaix 1007"
+    },
+    "PROTECTION_OFFICER": {
+      "KEY": "Délégué à la protection des données : "
+    }
+  },
+  "CONDITIONS": {
+    "TITLE": "2. Conditions générales d’utilisation du site et des services proposés.",
+    "PARAGRAPH": "Le Site constitue une œuvre de l’esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.",
+    "PARAGRAPH2": {
+      "SENTENCE": "L’utilisation du site ",
+      "SENTENCE2": "implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site",
+      "SENTENCE3": "sont donc invités à les consulter de manière régulière."
+    },
+    "PARAGRAPH3": {
+      "SENTENCE": "Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par",
+      "SENTENCE2": ", qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention. Le site web",
+      "SENTENCE3": "est mis à jour régulièrement par le responsable. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance."
+    }
+  },
+  "SERVICES": {
+    "TITLE": "3. Description des services fournis.",
+    "PARAGRAPH": {
+      "SENTENCE": "Le site internet",
+      "SENTENCE2": "a pour objet de fournir une information concernant l’ensemble des activités de la société.",
+      "SENTENCE3": "s’efforce de fournir sur le site des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations."
+    },
+    "PARAGRAPH2": "Toutes les informations indiquées sur le site sont données à titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne."
+  },
+  "LIMITS": {
+    "TITLE": "4. Limitations contractuelles sur les données techniques.",
+    "PARAGRAPH": {
+      "SENTENCE": "Le site utilise la technologie JavaScript. Le site Internet ne pourra être tenu responsable de dommages matériels liés à l’utilisation du site. De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour. Le site",
+      "SENTENCE2": "est hébergé chez un prestataire sur le territoire de l’Union Européenne conformément aux dispositions du Règlement Général sur la Protection des Données (RGPD : n° 2016-679)"
+    },
+    "PARAGRAPH2": "L’objectif est d’apporter une prestation qui assure le meilleur taux d’accessibilité. L’hébergeur assure la continuité de son service 24 Heures sur 24, tous les jours de l’année. Il se réserve néanmoins la possibilité d’interrompre le service d’hébergement pour les durées les plus courtes possibles notamment à des fins de maintenance, d’amélioration de ses infrastructures, de défaillance de ses infrastructures ou si les Prestations et Services génèrent un trafic réputé anormal.",
+    "PARAGRAPH3": " et l’hébergeur ne pourront être tenus responsables en cas de dysfonctionnement du réseau Internet, des lignes téléphoniques ou du matériel informatique et de téléphonie lié notamment à l’encombrement du réseau empêchant l’accès au serveur."
+  },
+  "INTELLECTUAL": {
+    "TITLE": "5. Propriété intellectuelle et contrefaçons.",
+    "PARAGRAPH": "est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de :",
+    "PARAGRAPH2": "Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle."
+  },
+  "RESPONSABILITY": {
+    "TITLE": "6. Limitations de responsabilité.",
+    "PARAGRAPH": {
+      "SENTENCE": "agit en tant qu’éditeur du site.",
+      "SENTENCE2": "est responsable de la qualité et de la véracité du Contenu qu’il publie."
+    },
+    "PARAGRAPH2": "ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site internet, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 4, soit de l’apparition d’un bug ou d’une incompatibilité.",
+    "PARAGRAPH3": {
+      "SENTENCE": "ne pourra également être tenu responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site",
+      "SENTENCE2": "Des espaces interactifs (possibilité de poser des questions dans l’espace contact) sont à la disposition des utilisateurs. https://poudlardrp.fr se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. Le cas échéant,",
+      "SENTENCE3": "se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …)."
+    }
+  },
+  "PERSONAL_DATAS": {
+    "TITLE": "7. Gestion des données personnelles.",
+    "PARAGRAPH": "Le Client est informé des réglementations concernant la communication marketing, la loi du 21 Juin 2014 pour la confiance dans l’Economie Numérique, la Loi Informatique et Liberté du 06 Août 2004 ainsi que du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).",
+    "COLLECT": {
+      "TITLE": "7.1 Responsables de la collecte des données personnelles",
+      "PARAGRAPH": {
+        "SENTENCE": "Pour les Données Personnelles collectées dans le cadre de la création du compte personnel de l’Utilisateur et de sa navigation sur le Site, le responsable du traitement des Données Personnelles est : Wizard Universe.",
+        "SENTENCE2": "est représenté par Lucien Lukes, son représentant légal."
+      },
+      "PARAGRAPH2": {
+        "SENTENCE": "En tant que responsable du traitement des données qu’il collecte,",
+        "SENTENCE2": " s’engage à respecter le cadre des dispositions légales en vigueur. Il lui appartient notamment au Client d’établir les finalités de ses traitements de données, de fournir à ses prospects et clients, à partir de la collecte de leurs consentements, une information complète sur le traitement de leurs données personnelles et de maintenir un registre des traitements conforme à la réalité. Chaque fois que",
+        "SENTENCE3": "traite des Données Personnelles,",
+        "SENTENCE4": "prend toutes les mesures raisonnables pour s’assurer de l’exactitude et de la pertinence des Données Personnelles au regard des finalités pour lesquelles",
+        "SENTENCE5": "les traite."
+      }
+    },
+    "PURPOSES": {
+        "TITLE": "7.2 Finalité des données collectées",
+        "LIST": {
+          "DESCRIPTION": "est susceptible de traiter tout ou partie des données :",
+          "SENTENCE": "pour permettre la navigation sur le Site et la gestion et la traçabilité des prestations et services commandés par l’utilisateur : données de connexion et d’utilisation du Site, facturation, historique des commandes, etc.",
+          "SENTENCE2": "pour prévenir et lutter contre la fraude informatique (spamming, hacking…) : matériel informatique utilisé pour la navigation, l’adresse IP, le mot de passe (hashé)",
+          "SENTENCE3": "pour améliorer la navigation sur le Site : données de connexion et d’utilisation",
+          "SENTENCE4": "pour mener des enquêtes de satisfaction facultatives sur le site : adresse email",
+          "SENTENCE5": "pour mener des campagnes de communication (sms, mail) : numéro de téléphone, adresse email",
+          "SENTENCE6": "ne commercialise pas vos données personnelles qui sont donc uniquement utilisées par nécessité ou à des fins statistiques et d’analyses."
+        }
+    },
+    "ACCESS": {
+      "TITLE": "7.3 Droit d’accès, de rectification et d’opposition",
+      "LIST": {
+        "DESCRIPTION": "Conformément à la réglementation européenne en vigueur, les Utilisateurs disposent des droits suivants :",
+        "SENTENCE": "droit d'accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données des Utilisateurs droit de verrouillage ou d’effacement des données des Utilisateurs à caractère personnel (article 17 du RGPD), lorsqu’elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l'utilisation, la communication ou la conservation est interdite",
+        "SENTENCE2": "droit de retirer à tout moment un consentement (article 13-2c RGPD)",
+        "SENTENCE3": "droit à la limitation du traitement des données des Utilisateurs (article 18 RGPD)",
+        "SENTENCE4": "droit d’opposition au traitement des données des Utilisateurs (article 21 RGPD)",
+        "SENTENCE5": "droit à la portabilité des données que les Utilisateurs auront fournies, lorsque ces données font l’objet de traitements automatisés fondés sur leur consentement ou sur un contrat (article 20 RGPD)",
+        "SENTENCE6": "droit de définir le sort des données des Utilisateurs après leur mort et de choisir à qui le site devra communiquer (ou non) ses données à un tiers qu’ils aura préalablement désigné"
+      },
+      "PARAGRAPH": {
+        "SENTENCE": "Dès que",
+        "SENTENCE2": "a connaissance du décès d’un Utilisateur et à défaut d’instructions de sa part,",
+        "SENTENCE3": "s’engage à détruire ses données, sauf si leur conservation s’avère nécessaire à des fins probatoires ou pour répondre à une obligation légale."
+      },
+      "PARAGRAPH2": {
+        "SENTENCE": "Si l’Utilisateur souhaite savoir comment",
+        "SENTENCE2": "utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut écrire à l’adresse suivante :",
+        "ADDRESS": "Wizard Universe – DPO, Lucien Lukes",
+        "ADDRESS2": "154 rue de la Croix de Tricoux 34980 Saint-Gély-du-Fesc."
+      },
+      "PARAGRAPH3": {
+        "SENTENCE": "Dans ce cas, l’Utilisateur doit indiquer les Données Personnelles qu’il souhaiterait que",
+        "SENTENCE2": "corrige, mette à jour ou supprime, en s’identifiant précisément avec une copie d’une pièce d’identité (carte d’identité ou passeport)."
+      },
+      "PARAGRAPH4": {
+        "SENTENCE": "Les demandes de suppression de Données Personnelles seront soumises aux obligations qui sont imposées à",
+        "SENTENCE2": "par la loi, notamment en matière de conservation ou d’archivage des documents. Enfin, les Utilisateurs de",
+        "SENTENCE3": "peuvent déposer une réclamation auprès des autorités de contrôle, et notamment de la CNIL (https://www.cnil.fr/fr/plaintes)."
+      }
+    },
+    "COMMUNICATION": {
+      "TITLE": "7.4 Non-communication des données personnelles",
+      "PARAGRAPH": {
+        "SENTENCE": "s’interdit de traiter, héberger ou transférer les Informations collectées sur ses Clients vers un pays situé en dehors de l’Union européenne ou reconnu comme « non adéquat » par la Commission européenne sans en informer préalablement le client. Pour autant,",
+        "SENTENCE2": "reste libre du choix de ses sous-traitants techniques et commerciaux à la condition qu’il présentent les garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679)."
+      },
+      "PARAGRAPH2": {
+        "SENTENCE": "s’engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu’elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l’intégrité ou la confidentialité des Informations du Client est portée à la connaissance de",
+        "SENTENCE2": ", celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs",
+        "SENTENCE3": "ne collecte aucune « données sensibles »."
+      },
+      "PARAGRAPH3": {
+        "SENTENCE": "Les Données Personnelles de l’Utilisateur peuvent être traitées par des filiales de",
+        "SENTENCE2": "et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique."
+      },
+      "PARAGRAPH4": "Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d’avoir accès aux données des Utilisateurs de https://poudlardrp.fr sont principalement les agents de notre service client."
+    }
+  },
+  "NOTIFICATION": {
+    "TITLE": "8. Notification d’incident",
+    "PARAGRAPH": "Quels que soient les efforts fournis, aucune méthode de transmission sur Internet et aucune méthode de stockage électronique n'est complètement sûre. Nous ne pouvons en conséquence pas garantir une sécurité absolue. Si nous prenions connaissance d'une brèche de la sécurité, nous avertirions les utilisateurs concernés afin qu'ils puissent prendre les mesures appropriées. Nos procédures de notification d’incident tiennent compte de nos obligations légales, qu'elles se situent au niveau national ou européen. Nous nous engageons à informer pleinement nos clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting.",
+    "PARAGRAPH2": {
+      "SENTENCE": "Aucune information personnelle de l'utilisateur du site",
+      "SENTENCE2": "n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l'hypothèse du rachat de",
+      "SENTENCE3": "et de ses droits permettrait la transmission des dites informations à l'éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des données vis à vis de l'utilisateur du site"
+    },
+    "SECURITY": {
+      "TITLE": "Sécurité",
+      "PARAGRAPH": {
+        "SENTENCE": "Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé,",
+        "SENTENCE2": "utilise des réseaux protégés par des dispositifs standards tels que par pare-feu, la pseudonymisation, l’encryption et mot de passe."
+      },
+      "PARAGRAPH2": {
+        "SENTENCE": "Lors du traitement des Données Personnelles,",
+        "SENTENCE2": "prend toutes les mesures raisonnables visant à les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction."
+      }
+    }
+  },
+  "HYPERTEXT": {
+    "TITLE": "9. Liens hypertextes « cookies » et balises (“tags”) internet",
+    "PARAGRAPH": {
+      "SENTENCE": "Le site",
+      "SENTENCE2": "contient un certain nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation de",
+      "SENTENCE3": "Cependant, le site n’a pas la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune responsabilité de ce fait."
+    },
+    "PARAGRAPH2": "Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l’accessibilité à tout ou partie des Services proposés par le site.",
+    "COOKIES": {
+      "TITLE": "9.1. « COOKIES »",
+      "PARAGRAPH": "Un « cookie » est un petit fichier d’information envoyé sur le navigateur de l’Utilisateur et enregistré au sein du terminal de l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le système d’exploitation de l’Utilisateur, ainsi que la date et l’heure d’accès. Les Cookies ne risquent en aucun cas d’endommager le terminal de l’Utilisateur.",
+      "PARAGRAPH2": {
+        "SENTENCE": "est susceptible de traiter les informations de l’Utilisateur concernant sa visite du Site, telles que les pages consultées, les recherches effectuées. Ces informations permettent à",
+        "SENTENCE2": "d’améliorer le contenu du Site, de la navigation de l’Utilisateur."
+      },
+      "PARAGRAPH3": {
+        "SENTENCE": "Les Cookies facilitant la navigation et/ou la fourniture des services proposés par le Site, l’Utilisateur peut configurer son navigateur pour qu’il lui permette de décider s’il souhaite ou non les accepter de manière à ce que des Cookies soient enregistrés dans le terminal ou, au contraire, qu’ils soient rejetés, soit systématiquement, soit selon leur émetteur. L’Utilisateur peut également configurer son logiciel de navigation de manière à ce que l’acceptation ou le refus des Cookies lui soient proposés ponctuellement, avant qu’un Cookie soit susceptible d’être enregistré dans son terminal.",
+        "SENTENCE2": "informe l’Utilisateur que, dans ce cas, il se peut que les fonctionnalités de son logiciel de navigation ne soient pas toutes disponibles."
+      },
+      "PARAGRAPH4": {
+        "SENTENCE": "Si l’Utilisateur refuse l’enregistrement de Cookies dans son terminal ou son navigateur, ou si l’Utilisateur supprime ceux qui y sont enregistrés, l’Utilisateur est informé que sa navigation et son expérience sur le Site peuvent être limitées. Cela pourrait également être le cas lorsque",
+        "SENTENCE2": "ou l’un de ses prestataires ne peut pas reconnaître, à des fins de compatibilité technique, le type de navigateur utilisé par le terminal, les paramètres de langue et d’affichage ou le pays depuis lequel le terminal semble connecté à Internet."
+      },
+      "PARAGRAPH5": {
+        "SENTENCE": "Le cas échéant,",
+        "SENTENCE2": "décline toute responsabilité pour les conséquences liées au fonctionnement dégradé du Site et des services éventuellement proposés par le site, résultant (i) du refus de Cookies par l’Utilisateur (ii) de l’impossibilité pour le site d’enregistrer ou de consulter les Cookies nécessaires à leur fonctionnement du fait du choix de l’Utilisateur. Pour la gestion des Cookies et des choix de l’Utilisateur, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d’aide du navigateur, qui permettra de savoir de quelle manière l’Utilisateur peut modifier ses souhaits en matière de Cookies."
+      },
+      "PARAGRAPH6": {
+        "SENTENCE": "À tout moment, l’Utilisateur peut faire le choix d’exprimer et de modifier ses souhaits en matière de Cookies.",
+        "SENTENCE2": "pourra en outre faire appel aux services de prestataires externes pour l’aider à recueillir et traiter les informations décrites dans cette section."
+      },
+      "PARAGRAPH7": {
+        "SENTENCE": "Enfin, en cliquant sur les icônes dédiées aux réseaux sociaux Twitter, Facebook, Linkedin et Google Plus figurant sur le Site de",
+        "SENTENCE2": "ou dans son application mobile et si l’Utilisateur a accepté le dépôt de cookies en poursuivant sa navigation sur le Site Internet ou l’application mobile de",
+        "SENTENCE3": ", Twitter, Facebook, Linkedin et Google Plus peuvent également déposer des cookies sur vos terminaux (ordinateur, tablette, téléphone portable)."
+      },
+      "PARAGRAPH8": {
+        "SENTENCE": "Ces types de cookies ne sont déposés sur vos terminaux qu’à condition que vous y consentiez, en continuant votre navigation sur le Site Internet ou l’application mobile de",
+        "SENTENCE2": ". À tout moment, l’Utilisateur peut néanmoins revenir sur son consentement à ce que https://poudlardrp.fr dépose ce type de cookies."
+      }
+    },
+    "TAGS": {
+      "TITLE": "Article 9.2. BALISES (“TAGS”) INTERNET",
+      "PARAGRAPH": "peut employer occasionnellement des balises Internet (également appelées « tags », ou balises d’action, GIF à un pixel, GIF transparents, GIF invisibles et GIF un à un) et les déployer par l’intermédiaire d’un partenaire spécialiste d’analyses Web susceptible de se trouver (et donc de stocker les informations correspondantes, y compris l’adresse IP de l’Utilisateur) dans un pays étranger.",
+      "PARAGRAPH2": "Ces balises sont placées à la fois dans les publicités en ligne permettant aux internautes d’accéder au Site, et sur les différentes pages de celui-ci.",
+      "PARAGRAPH3": {
+        "SENTENCE": "Cette technologie permet à",
+        "SENTENCE2": "d’évaluer les réponses des visiteurs face au Site et l’efficacité de ses actions (par exemple, le nombre de fois où une page est ouverte et les informations consultées), ainsi que l’utilisation de ce Site par l’Utilisateur."
+      },
+      "PARAGRAPH4": {
+        "SENTENCE": "Le prestataire externe pourra éventuellement recueillir des informations sur les visiteurs du Site et d’autres sites Internet grâce à ces balises, constituer des rapports sur l’activité du Site à l’attention de",
+        "SENTENCE2": ", et fournir d’autres services relatifs à l’utilisation de celui-ci et d’Internet."
+      }
+    }
+  },
+  "JURIDICTION": {
+    "TITLE": "10. Droit applicable et attribution de juridiction.",
+    "PARAGRAPH": {
+      "SENTENCE": "Tout litige en relation avec l’utilisation du site ",
+      "SENTENCE2": "est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Saint-Gély-du-Fesc"
+    }
+  }
+}

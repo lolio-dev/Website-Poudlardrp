@@ -1,0 +1,206 @@
+@import '/src/styles/fonts';
+@import '/src/styles/vars';
+@import '/src/styles/colors';
+
+* {
+  margin: 0;
+}
+
+span {
+  display: block;
+}
+
+main {
+  @media (min-width: $laptop) {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+  padding-left: 28px;
+  padding-right: 28px;
+
+  @media (min-width: $tablet) {
+    margin-top: $space * 6;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: $space * 9.5;
+  }
+
+  margin-top: $space * 4.5;
+}
+
+.herobanner {
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  .user-photo {
+    @media (min-width: $laptop) {
+      width: 200px;
+      height: 200px;
+    }
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .herobanner__content {
+    @media (min-width: $laptop) {
+      margin-left: 64px;
+    }
+
+    .user-identity {
+      @media (min-width: $laptop) {
+        margin-left: 64px;
+        font: $montserrat-48-medium;
+      }
+
+      @media (min-width: $tablet) {
+        margin-left: 34px;
+        margin-top: 0;
+      }
+
+      margin-top: 20px;
+
+      display: flex;
+      font: $montserrat-24-medium;
+    }
+
+    .user-informations {
+      @media (min-width: $laptop) {
+        margin-left: 64px;
+        margin-top: 0;
+        font: $montserrat-20-regular;
+      }
+
+      @media (min-width: $tablet) {
+        margin-left: 34px;
+      }
+
+      font: $montserrat-11-regular;
+      margin-top: $space;
+    }
+  }
+}
+
+.settings {
+  @media (min-width: $laptop) {
+    padding-left: 64px;
+    padding-top: 44px;
+  }
+  margin-top: 35px;
+
+  .settings__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .settings__actions {
+      display: flex;
+      gap: 5px;
+    }
+
+    .settings__icon-btn {
+      @media (min-width: $laptop) {
+        width: 45px;
+        height: 45px;
+      }
+      width: 30px;
+      height: 30px;
+
+      .settings__icon {
+        @media (min-width: $laptop) {
+          width: 25px;
+          height: 25px;
+          font-size: 25px;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 10px;
+        height: 10px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .settings__sections form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 24px;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .settings__section {
+      @media (min-width: $tablet) {
+        width: 40%;
+      }
+
+      margin-right: 75px;
+
+      .section__inputs {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          color: red;
+        }
+      }
+
+      .section__header {
+        margin-bottom: 25px;
+        display: flex;
+
+        .section__icon {
+          font-size: 30px;
+          width: 30px;
+          height: 30px;
+          color: $primary;
+        }
+
+        .section__title {
+          margin-left: 5px;
+          margin-top: 1.8px;
+          font: $montserrat-24-bold;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .settings__actions div{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      margin-left: 10px;
+    }
+  }
+}
+
+.change-password-btn {
+  margin-bottom: 10px;
+}
+
+.download-data-btn {
+  display: flex;
+  gap: 10px;
+}

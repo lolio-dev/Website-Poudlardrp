@@ -1,0 +1,12 @@
+@import '/src/styles/vars';
+
+.banner {
+  @media(min-width: $tablet) {
+    height: 50%;
+  }
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 221px;
+  object-fit: cover;
+}

@@ -1,0 +1,32 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<app-header *ngIf="loaded" [user]='user'></app-header>
+<main *ngIf="loaded">
+  <div class='headBanner'>
+    <app-banner [image]='banner.image' [alt]='banner.alt'></app-banner>
+    <div class='infos'>
+      <div class='players'>
+        <div class='circle'></div>
+        <p>{{players.online}} / {{players.max}}</p>
+      </div>
+      <p class='ip'>play.poudlardrp.fr</p>
+      <p class='version'>1.15.2</p>
+    </div>
+  </div>
+  <div class='content'>
+    <section class='news'>
+      <h1>Actualité</h1>
+      <app-news *ngIf="firstNews" routerLink='/quibbler' [title]='firstNews.title' [subtitle]='firstNews.subtitle'
+        [text]='firstNews.text'
+                [date]='firstNews.date' [image]='firstNews.image'></app-news>
+    </section>
+    <section class='shop' *ngIf="firstShop">
+      <h1>Nouveauté</h1>
+      <app-items [title]='firstShop.title' [description]='firstShop.description' [price]='firstShop.price'
+                [image]='firstShop.image' [id]='firstShop.productId'></app-items>
+    </section>
+  </div>
+</main>
+<app-footer *ngIf="loaded"></app-footer>

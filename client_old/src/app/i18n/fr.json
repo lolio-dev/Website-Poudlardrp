@@ -1,0 +1,59 @@
+{
+  "LOGIN": {
+    "TITLE": "Connexion",
+    "INPUTS": {
+      "EMAIL": {
+        "PLACEHOLDER": "E-mail"
+      },
+      "PASSWORD": {
+        "PLACEHOLDER": "Mot de passe"
+      }
+    },
+    "PASSWORD_FORGOTEN": "Mot de passe oublié",
+    "CONNECT_BUTTON": "Se connecter",
+    "TO_SIGN_UP_BUTTON": "S'inscrire"
+  },
+  "SIGN_UP": {
+    "TITLE": "Inscription",
+    "INPUTS": {
+      "LASTNAME": {
+        "PLACEHOLDER": "Nom"
+      },
+      "FIRSTNAME": {
+        "PLACEHOLDER": "Prénom"
+      },
+      "USERNAME": {
+        "PLACEHOLDER": "Pseudo MC"
+      },
+      "EMAIL": {
+        "PLACEHOLDER": "E-mail"
+      },
+      "PASSWORD": {
+        "PLACEHOLDER": "Mot de passe"
+      },
+      "ADDRESS": {
+        "PLACEHOLDER": "Adresse"
+      },
+      "COMPLEMENT": {
+        "PLACEHOLDER": "Complément"
+      },
+      "CITY": {
+        "PLACEHOLDER": "Ville"
+      },
+      "POSTAL_CODE": {
+        "PLACEHOLDER": "Code postal"
+      }
+    },
+    "VALIDATION_BUTTON": "S'inscrire"
+  },
+  "PASSWORD_RECOVERY": {
+    "TITLE": "Récupération du mot de passe",
+    "SEND_BUTTON": "Envoyer",
+    "INPUTS": {
+      "EMAIL": {
+        "PLACEHOLDER": "E-mail"
+      }
+    },
+    "VALIDATION_BUTTON": "Envoyer"
+  }
+}

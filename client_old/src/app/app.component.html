@@ -1,0 +1,95 @@
+<div *ngIf="!loaded">
+  <app-loading></app-loading>
+</div>
+
+<div class='content' role='main'>
+  <lib-toastify-toast-container [position]="'bottom-left'"></lib-toastify-toast-container>
+  <app-modal id='login-modal'>
+    <h1 header>Connexion</h1>
+    <div body>
+      <form id='login' (submit)="connect($event)">
+        <app-input [type]="'email'" [placeholder]="'E-mail'" [required]='true'></app-input>
+        <app-input [type]="'password'" [placeholder]="'Mot de passe'" [required]='true'></app-input>
+        <a (click)='openRecoveryModal()'>Mot de passe oublié</a>
+      </form>
+    </div>
+    <div footer>
+      <button custom-button type='submit' form='login' [ngClass]='primaryButtonClass' label='Se connecter'
+        class="loginBtn"></button>
+      <button custom-button [ngClass]='secondaryButtonClass' (click)='openSigninModal()' label="S'inscrire"></button>
+    </div>
+  </app-modal>
+  <app-modal id='signin-modal'>
+    <h1 header>Inscription</h1>
+    <div body>
+      <form id='signin' (submit)="signin($event)">
+        <app-input [type]="'text'" [placeholder]="'Nom'" [required]='true'>
+        </app-input>
+        <app-input [type]="'text'" [placeholder]="'Prénom'" [required]='true'>
+        </app-input>
+        <app-input [type]="'text'" [placeholder]="'Pseudo MC'" [required]='true'>
+        </app-input>
+        <app-input [type]="'email'" [placeholder]="'E-mail'" [required]='true'>
+        </app-input>
+        <app-input [type]="'password'" [placeholder]="'Mot de passe'" [required]='true'>
+        </app-input>
+        <app-input [type]="'date'" [placeholder]="'Date de naissance'" [required]='true'>
+        </app-input>
+        <app-input [type]="'text'" [placeholder]="'Adresse'" [required]='true'>
+        </app-input>
+        <app-input [type]="'text'" [placeholder]="'Complément'" [required]='false'>
+        </app-input>
+        <app-input [type]="'text'" [placeholder]="'Ville'" [required]='true'>
+        </app-input>
+        <select id="country-select">
+          <option *ngFor="let country of countries" value="country.countryId">{{country.name}}</option>
+        </select>
+        <app-input [type]="'text'" [placeholder]="'Code postal'" [required]='true'>
+        </app-input>
+      </form>
+    </div>
+    <div footer>
+      <button custom-button type='submit' form='signin' [ngClass]='primaryButtonClass' label="S'inscrire"></button>
+    </div>
+  </app-modal>
+  <app-modal id='recovery-modal'>
+    <h1 header>Récupération du mot de passe</h1>
+    <div body>
+      <form id='recovery' (submit)="sendRecovery($event)">
+        <app-input id="email" [type]="'email'" [placeholder]="'E-mail'" [required]='true'>
+        </app-input>
+      </form>
+    </div>
+    <div footer>
+      <button custom-button type='submit' form='recovery' [ngClass]='primaryButtonClass' label='Envoyer'></button>
+    </div>
+  </app-modal>
+  <app-modal id="change-password-modal">
+    <h1 header>Changement du mot de passe</h1>
+    <div body>
+      <form id="change-password" (submit)="changePassword($event)">
+        <app-input [required]="true" [type]="'password'" id="oldPassword" placeholder="Ancien mot de passe"></app-input>
+        <app-input [required]="true" [type]="'password'" id="newPassword" placeholder="Nouveau mot de passe"></app-input>
+        <app-input [required]="true" [type]="'password'" id="newPasswordConfirmation" placeholder="Confirmation"></app-input>
+      </form>
+    </div>
+    <div footer>
+      <button custom-button [ngClass]="secondaryButtonClass" label="Annuler"
+        (click)="closeModal('change-password-modal')" class="loginBtn"></button>
+      <button custom-button [ngClass]="primaryButtonClass" label="Changer" type="submit"
+        form="change-password"></button>
+    </div>
+  </app-modal>
+  <app-modal id="archive-account-validation-modal">
+    <h1 header>Désactiver votre compte.</h1>
+    <div body class="archive-account-body">
+      <p class="archive-account-text">Toutes vos données seront anonymisées à l'exception des factures éditées.</p>
+      <p class="archive-account-text"><mat-icon class="archive-account-icon">warning</mat-icon>Cette action est iréversible.</p>
+    </div>
+    <div footer>
+      <button custom-button [ngClass]="secondaryButtonClass" label="Désactiver" (click)="archiveAccount($event)"></button>
+      <button custom-button [ngClass]="primaryButtonClass" label="Je préfère le garder" (click)="closeModal('archive-account-validation-modal')" class="loginBtn"></button>
+    </div>
+  </app-modal>
+</div>
+<router-outlet></router-outlet>
